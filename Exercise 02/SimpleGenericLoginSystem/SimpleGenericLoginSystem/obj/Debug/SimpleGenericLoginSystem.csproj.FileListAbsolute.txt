@@ -1,0 +1,10 @@
+C:\Users\Android\Documents\ICT Pawel\11 Event Driven Programming solutions (414)\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\bin\Debug\SimpleGenericLoginSystem.exe.config
+C:\Users\Android\Documents\ICT Pawel\11 Event Driven Programming solutions (414)\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\bin\Debug\SimpleGenericLoginSystem.exe
+C:\Users\Android\Documents\ICT Pawel\11 Event Driven Programming solutions (414)\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\bin\Debug\SimpleGenericLoginSystem.pdb
+C:\Users\Android\Documents\ICT Pawel\11 Event Driven Programming solutions (414)\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.csprojAssemblyReference.cache
+C:\Users\Android\Documents\ICT Pawel\11 Event Driven Programming solutions (414)\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.Login.resources
+C:\Users\Android\Documents\ICT Pawel\11 Event Driven Programming solutions (414)\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.Properties.Resources.resources
+C:\Users\Android\Documents\ICT Pawel\11 Event Driven Programming solutions (414)\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.csproj.GenerateResource.cache
+C:\Users\Android\Documents\ICT Pawel\11 Event Driven Programming solutions (414)\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.csproj.CoreCompileInputs.cache
+C:\Users\Android\Documents\ICT Pawel\11 Event Driven Programming solutions (414)\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.exe
+C:\Users\Android\Documents\ICT Pawel\11 Event Driven Programming solutions (414)\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.pdb
