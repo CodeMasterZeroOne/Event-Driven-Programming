@@ -1,6 +1,6 @@
 ﻿namespace SimpleGenericLoginSystem
 {
-    partial class Login
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.labelUserID = new System.Windows.Forms.Label();
             this.labelUserPassword = new System.Windows.Forms.Label();
             this.textBoxUserID = new System.Windows.Forms.TextBox();
@@ -36,8 +37,8 @@
             this.linkLabelForgotPassword = new System.Windows.Forms.LinkLabel();
             this.labelNewUser = new System.Windows.Forms.Label();
             this.buttonUserRegister = new System.Windows.Forms.Button();
-            this.linkLabelAdminLogin = new System.Windows.Forms.LinkLabel();
             this.linkLabelHelp = new System.Windows.Forms.LinkLabel();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelUserID
@@ -48,7 +49,6 @@
             this.labelUserID.Size = new System.Drawing.Size(46, 13);
             this.labelUserID.TabIndex = 0;
             this.labelUserID.Text = "User ID:";
-            this.labelUserID.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelUserPassword
             // 
@@ -77,7 +77,7 @@
             // 
             // buttonUserLogin
             // 
-            this.buttonUserLogin.Location = new System.Drawing.Point(297, 326);
+            this.buttonUserLogin.Location = new System.Drawing.Point(174, 174);
             this.buttonUserLogin.Name = "buttonUserLogin";
             this.buttonUserLogin.Size = new System.Drawing.Size(75, 23);
             this.buttonUserLogin.TabIndex = 4;
@@ -87,17 +87,18 @@
             // linkLabelForgotPassword
             // 
             this.linkLabelForgotPassword.AutoSize = true;
-            this.linkLabelForgotPassword.Location = new System.Drawing.Point(281, 310);
+            this.linkLabelForgotPassword.Location = new System.Drawing.Point(171, 200);
             this.linkLabelForgotPassword.Name = "linkLabelForgotPassword";
             this.linkLabelForgotPassword.Size = new System.Drawing.Size(91, 13);
             this.linkLabelForgotPassword.TabIndex = 5;
             this.linkLabelForgotPassword.TabStop = true;
             this.linkLabelForgotPassword.Text = "Forgot password?";
+            this.linkLabelForgotPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelForgotPassword_LinkClicked);
             // 
             // labelNewUser
             // 
             this.labelNewUser.AutoSize = true;
-            this.labelNewUser.Location = new System.Drawing.Point(12, 310);
+            this.labelNewUser.Location = new System.Drawing.Point(174, 310);
             this.labelNewUser.Name = "labelNewUser";
             this.labelNewUser.Size = new System.Drawing.Size(79, 13);
             this.labelNewUser.TabIndex = 6;
@@ -105,22 +106,13 @@
             // 
             // buttonUserRegister
             // 
-            this.buttonUserRegister.Location = new System.Drawing.Point(12, 326);
+            this.buttonUserRegister.Location = new System.Drawing.Point(174, 326);
             this.buttonUserRegister.Name = "buttonUserRegister";
             this.buttonUserRegister.Size = new System.Drawing.Size(75, 23);
             this.buttonUserRegister.TabIndex = 7;
             this.buttonUserRegister.Text = "Register";
             this.buttonUserRegister.UseVisualStyleBackColor = true;
-            // 
-            // linkLabelAdminLogin
-            // 
-            this.linkLabelAdminLogin.AutoSize = true;
-            this.linkLabelAdminLogin.Location = new System.Drawing.Point(142, 339);
-            this.linkLabelAdminLogin.Name = "linkLabelAdminLogin";
-            this.linkLabelAdminLogin.Size = new System.Drawing.Size(96, 13);
-            this.linkLabelAdminLogin.TabIndex = 8;
-            this.linkLabelAdminLogin.TabStop = true;
-            this.linkLabelAdminLogin.Text = "Administrator Login";
+            this.buttonUserRegister.Click += new System.EventHandler(this.buttonUserRegister_Click);
             // 
             // linkLabelHelp
             // 
@@ -131,15 +123,28 @@
             this.linkLabelHelp.TabIndex = 9;
             this.linkLabelHelp.TabStop = true;
             this.linkLabelHelp.Text = "Help?";
+            this.linkLabelHelp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelHelp_LinkClicked);
             // 
-            // Login
+            // buttonExit
+            // 
+            this.buttonExit.ForeColor = System.Drawing.Color.Black;
+            this.buttonExit.Image = ((System.Drawing.Image)(resources.GetObject("buttonExit.Image")));
+            this.buttonExit.Location = new System.Drawing.Point(336, 9);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(36, 36);
+            this.buttonExit.TabIndex = 10;
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
+            // LoginForm
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 361);
+            this.ControlBox = false;
+            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.linkLabelHelp);
-            this.Controls.Add(this.linkLabelAdminLogin);
             this.Controls.Add(this.buttonUserRegister);
             this.Controls.Add(this.labelNewUser);
             this.Controls.Add(this.linkLabelForgotPassword);
@@ -148,10 +153,13 @@
             this.Controls.Add(this.textBoxUserID);
             this.Controls.Add(this.labelUserPassword);
             this.Controls.Add(this.labelUserID);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Login";
+            this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Window";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,8 +175,8 @@
         private System.Windows.Forms.LinkLabel linkLabelForgotPassword;
         private System.Windows.Forms.Label labelNewUser;
         private System.Windows.Forms.Button buttonUserRegister;
-        private System.Windows.Forms.LinkLabel linkLabelAdminLogin;
         private System.Windows.Forms.LinkLabel linkLabelHelp;
+        private System.Windows.Forms.Button buttonExit;
     }
 }
 

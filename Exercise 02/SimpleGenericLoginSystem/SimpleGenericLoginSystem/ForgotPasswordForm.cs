@@ -10,33 +10,28 @@ using System.Windows.Forms;
 
 namespace SimpleGenericLoginSystem
 {
-    public partial class RegisterForm : Form
+    public partial class ForgotPasswordForm : Form
     {
         private RegisterForm registerForm;
         private HelpForm helpForm;
         private LoginForm loginForm;
+        private ForgotPasswordForm forgotPasswordForm;
 
-        public RegisterForm()
+        public ForgotPasswordForm()
         {
             InitializeComponent();
         }
 
-        private void RegisterForm_Load(object sender, EventArgs e)
+        private void ForgotPasswordForm_Load(object sender, EventArgs e)
         {
             loginForm = new LoginForm();
-            helpForm = new HelpForm();
-            registerForm = this;
-        }
+            forgotPasswordForm = this;
+    }
 
         private void buttonCancelRegistration_Click(object sender, EventArgs e)
         {
-            registerForm.Hide();
+            forgotPasswordForm.Close();
             loginForm.Show();
-        }
-
-        private void linkLabelHelp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            helpForm.Show();
         }
     }
 }

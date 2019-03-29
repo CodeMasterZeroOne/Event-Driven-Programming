@@ -28,39 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HelpForm));
+            this.labelHelp = new System.Windows.Forms.Label();
+            this.textBoxHelp = new System.Windows.Forms.TextBox();
+            this.buttonOk = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // labelHelp
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(164, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.labelHelp.AutoSize = true;
+            this.labelHelp.Location = new System.Drawing.Point(156, 31);
+            this.labelHelp.Name = "labelHelp";
+            this.labelHelp.Size = new System.Drawing.Size(29, 13);
+            this.labelHelp.TabIndex = 0;
+            this.labelHelp.Text = "Help";
             // 
-            // textBox1
+            // textBoxHelp
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 93);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(360, 256);
-            this.textBox1.TabIndex = 1;
+            this.textBoxHelp.Cursor = System.Windows.Forms.Cursors.No;
+            this.textBoxHelp.Enabled = false;
+            this.textBoxHelp.Location = new System.Drawing.Point(12, 52);
+            this.textBoxHelp.Multiline = true;
+            this.textBoxHelp.Name = "textBoxHelp";
+            this.textBoxHelp.ReadOnly = true;
+            this.textBoxHelp.Size = new System.Drawing.Size(360, 268);
+            this.textBoxHelp.TabIndex = 1;
+            // 
+            // buttonOk
+            // 
+            this.buttonOk.Location = new System.Drawing.Point(122, 326);
+            this.buttonOk.Name = "buttonOk";
+            this.buttonOk.Size = new System.Drawing.Size(145, 23);
+            this.buttonOk.TabIndex = 2;
+            this.buttonOk.Text = "Ok, I understand.";
+            this.buttonOk.UseVisualStyleBackColor = true;
+            this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
             // HelpForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 361);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.ControlBox = false;
+            this.Controls.Add(this.buttonOk);
+            this.Controls.Add(this.textBoxHelp);
+            this.Controls.Add(this.labelHelp);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "HelpForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Help Window";
+            this.Load += new System.EventHandler(this.HelpForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -68,7 +87,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelHelp;
+        private System.Windows.Forms.TextBox textBoxHelp;
+        private System.Windows.Forms.Button buttonOk;
     }
 }

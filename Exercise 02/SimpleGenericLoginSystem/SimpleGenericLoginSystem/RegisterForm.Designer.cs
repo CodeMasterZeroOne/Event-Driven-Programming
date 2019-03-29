@@ -28,155 +28,164 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelFirstName = new System.Windows.Forms.Label();
+            this.labelLastName = new System.Windows.Forms.Label();
+            this.labelUserID = new System.Windows.Forms.Label();
+            this.labelRagisteringUserPassword = new System.Windows.Forms.Label();
+            this.labelAccNumber = new System.Windows.Forms.Label();
+            this.labelUserEmail = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.comboBoxRole = new System.Windows.Forms.ComboBox();
+            this.labelRole = new System.Windows.Forms.Label();
+            this.buttonRegisterUser = new System.Windows.Forms.Button();
+            this.buttonCancelRegistration = new System.Windows.Forms.Button();
             this.linkLabelHelp = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
-            // label1
+            // labelFirstName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 57);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.labelFirstName.AutoSize = true;
+            this.labelFirstName.Location = new System.Drawing.Point(46, 57);
+            this.labelFirstName.Name = "labelFirstName";
+            this.labelFirstName.Size = new System.Drawing.Size(58, 13);
+            this.labelFirstName.TabIndex = 0;
+            this.labelFirstName.Text = "First name:";
             // 
-            // label2
+            // labelLastName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(46, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.labelLastName.AutoSize = true;
+            this.labelLastName.Location = new System.Drawing.Point(46, 83);
+            this.labelLastName.Name = "labelLastName";
+            this.labelLastName.Size = new System.Drawing.Size(59, 13);
+            this.labelLastName.TabIndex = 1;
+            this.labelLastName.Text = "Last name:";
             // 
-            // label3
+            // labelUserID
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(46, 109);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.labelUserID.AutoSize = true;
+            this.labelUserID.Location = new System.Drawing.Point(46, 109);
+            this.labelUserID.Name = "labelUserID";
+            this.labelUserID.Size = new System.Drawing.Size(46, 13);
+            this.labelUserID.TabIndex = 2;
+            this.labelUserID.Text = "User ID:";
             // 
-            // label4
+            // labelRagisteringUserPassword
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(46, 135);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.labelRagisteringUserPassword.AutoSize = true;
+            this.labelRagisteringUserPassword.Location = new System.Drawing.Point(46, 135);
+            this.labelRagisteringUserPassword.Name = "labelRagisteringUserPassword";
+            this.labelRagisteringUserPassword.Size = new System.Drawing.Size(56, 13);
+            this.labelRagisteringUserPassword.TabIndex = 3;
+            this.labelRagisteringUserPassword.Text = "Password:";
             // 
-            // label5
+            // labelAccNumber
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(46, 161);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
+            this.labelAccNumber.AutoSize = true;
+            this.labelAccNumber.Location = new System.Drawing.Point(46, 161);
+            this.labelAccNumber.Name = "labelAccNumber";
+            this.labelAccNumber.Size = new System.Drawing.Size(90, 13);
+            this.labelAccNumber.TabIndex = 4;
+            this.labelAccNumber.Text = "Account Number:";
             // 
-            // label6
+            // labelUserEmail
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(46, 187);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "label6";
+            this.labelUserEmail.AutoSize = true;
+            this.labelUserEmail.Location = new System.Drawing.Point(46, 187);
+            this.labelUserEmail.Name = "labelUserEmail";
+            this.labelUserEmail.Size = new System.Drawing.Size(35, 13);
+            this.labelUserEmail.TabIndex = 5;
+            this.labelUserEmail.Text = "Email:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(164, 54);
+            this.textBox1.Location = new System.Drawing.Point(146, 54);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(157, 20);
             this.textBox1.TabIndex = 6;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(164, 80);
+            this.textBox2.Location = new System.Drawing.Point(146, 80);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(157, 20);
             this.textBox2.TabIndex = 7;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(164, 106);
+            this.textBox3.Location = new System.Drawing.Point(146, 106);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(157, 20);
             this.textBox3.TabIndex = 8;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(164, 132);
+            this.textBox4.Location = new System.Drawing.Point(146, 132);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(157, 20);
             this.textBox4.TabIndex = 9;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(164, 158);
+            this.textBox5.Location = new System.Drawing.Point(146, 158);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(157, 20);
             this.textBox5.TabIndex = 10;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(164, 184);
+            this.textBox6.Location = new System.Drawing.Point(146, 184);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(157, 20);
             this.textBox6.TabIndex = 11;
             // 
-            // comboBox1
+            // comboBoxRole
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(164, 210);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(157, 21);
-            this.comboBox1.TabIndex = 12;
+            this.comboBoxRole.FormattingEnabled = true;
+            this.comboBoxRole.Items.AddRange(new object[] {
+            "Super User (All Payments)",
+            "Super User",
+            "Administrator",
+            "Auditor",
+            "Account Operator",
+            "Balance Operator",
+            "Customer"});
+            this.comboBoxRole.Location = new System.Drawing.Point(146, 210);
+            this.comboBoxRole.Name = "comboBoxRole";
+            this.comboBoxRole.Size = new System.Drawing.Size(157, 21);
+            this.comboBoxRole.TabIndex = 12;
             // 
-            // label7
+            // labelRole
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(46, 213);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "label7";
+            this.labelRole.AutoSize = true;
+            this.labelRole.Location = new System.Drawing.Point(46, 213);
+            this.labelRole.Name = "labelRole";
+            this.labelRole.Size = new System.Drawing.Size(29, 13);
+            this.labelRole.TabIndex = 13;
+            this.labelRole.Text = "Role";
             // 
-            // button1
+            // buttonRegisterUser
             // 
-            this.button1.Location = new System.Drawing.Point(297, 326);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonRegisterUser.Location = new System.Drawing.Point(297, 326);
+            this.buttonRegisterUser.Name = "buttonRegisterUser";
+            this.buttonRegisterUser.Size = new System.Drawing.Size(75, 23);
+            this.buttonRegisterUser.TabIndex = 14;
+            this.buttonRegisterUser.Text = "Register";
+            this.buttonRegisterUser.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // buttonCancelRegistration
             // 
-            this.button2.Location = new System.Drawing.Point(13, 325);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonCancelRegistration.Location = new System.Drawing.Point(13, 325);
+            this.buttonCancelRegistration.Name = "buttonCancelRegistration";
+            this.buttonCancelRegistration.Size = new System.Drawing.Size(75, 23);
+            this.buttonCancelRegistration.TabIndex = 15;
+            this.buttonCancelRegistration.Text = "Cancel";
+            this.buttonCancelRegistration.UseVisualStyleBackColor = true;
+            this.buttonCancelRegistration.Click += new System.EventHandler(this.buttonCancelRegistration_Click);
             // 
             // linkLabelHelp
             // 
@@ -187,33 +196,37 @@
             this.linkLabelHelp.TabIndex = 16;
             this.linkLabelHelp.TabStop = true;
             this.linkLabelHelp.Text = "Help?";
+            this.linkLabelHelp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelHelp_LinkClicked);
             // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 361);
+            this.ControlBox = false;
             this.Controls.Add(this.linkLabelHelp);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.buttonCancelRegistration);
+            this.Controls.Add(this.buttonRegisterUser);
+            this.Controls.Add(this.labelRole);
+            this.Controls.Add(this.comboBoxRole);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelUserEmail);
+            this.Controls.Add(this.labelAccNumber);
+            this.Controls.Add(this.labelRagisteringUserPassword);
+            this.Controls.Add(this.labelUserID);
+            this.Controls.Add(this.labelLastName);
+            this.Controls.Add(this.labelFirstName);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "RegisterForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register Window";
+            this.Load += new System.EventHandler(this.RegisterForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,22 +234,22 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelFirstName;
+        private System.Windows.Forms.Label labelLastName;
+        private System.Windows.Forms.Label labelUserID;
+        private System.Windows.Forms.Label labelRagisteringUserPassword;
+        private System.Windows.Forms.Label labelAccNumber;
+        private System.Windows.Forms.Label labelUserEmail;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox comboBoxRole;
+        private System.Windows.Forms.Label labelRole;
+        private System.Windows.Forms.Button buttonRegisterUser;
+        private System.Windows.Forms.Button buttonCancelRegistration;
         private System.Windows.Forms.LinkLabel linkLabelHelp;
     }
 }

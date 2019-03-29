@@ -16,5 +16,15 @@ namespace SimpleGenericLoginSystem
         {
             InitializeComponent();
         }
+
+        private void HelpForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonOk_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
