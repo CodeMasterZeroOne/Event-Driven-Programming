@@ -36,6 +36,7 @@ namespace SimpleGenericLoginSystem
 
         private void linkLabelHelp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            helpForm = new HelpForm();
             helpForm.Show();
         }
     }
