@@ -16,6 +16,8 @@ namespace SimpleGenericLoginSystem
         private HelpForm helpForm;
         private LoginForm loginForm;
 
+        private ComboBox defaultRole;
+
         public RegisterForm()
         {
             InitializeComponent();
@@ -23,9 +25,11 @@ namespace SimpleGenericLoginSystem
 
         private void RegisterForm_Load(object sender, EventArgs e)
         {
+            registerForm = this;
             loginForm = new LoginForm();
             helpForm = new HelpForm();
-            registerForm = this;
+            defaultRole = Controls.Find("comboBoxInputRole", true).FirstOrDefault() as ComboBox;
+            defaultRole.SelectedIndex = 0; // index 0 is "Customer" default value
         }
 
         private void buttonCancelRegistration_Click(object sender, EventArgs e)
@@ -36,7 +40,6 @@ namespace SimpleGenericLoginSystem
 
         private void linkLabelHelp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            helpForm = new HelpForm();
             helpForm.Show();
         }
     }

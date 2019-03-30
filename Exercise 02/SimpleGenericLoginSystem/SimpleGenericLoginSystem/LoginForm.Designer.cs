@@ -83,6 +83,7 @@
             this.buttonUserLogin.TabIndex = 4;
             this.buttonUserLogin.Text = "Login";
             this.buttonUserLogin.UseVisualStyleBackColor = true;
+            this.buttonUserLogin.Click += new System.EventHandler(this.buttonUserLogin_Click);
             // 
             // linkLabelForgotPassword
             // 

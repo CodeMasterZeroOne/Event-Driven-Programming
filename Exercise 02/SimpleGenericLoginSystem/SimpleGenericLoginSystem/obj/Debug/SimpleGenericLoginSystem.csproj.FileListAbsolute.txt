@@ -21,3 +21,4 @@ C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGener
 C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.pdb
 C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.LoginForm.resources
 C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.ForgotPasswordForm.resources
+C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.UserLoggedInForm.resources

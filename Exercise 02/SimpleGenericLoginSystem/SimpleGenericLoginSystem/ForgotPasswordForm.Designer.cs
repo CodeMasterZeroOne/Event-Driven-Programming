@@ -32,7 +32,7 @@
             this.textBoxUserID = new System.Windows.Forms.TextBox();
             this.labelUserID = new System.Windows.Forms.Label();
             this.labelRecoverPassword = new System.Windows.Forms.Label();
-            this.labelrecoverEmail = new System.Windows.Forms.Label();
+            this.labelRecoverEmail = new System.Windows.Forms.Label();
             this.buttonRecoverPassword = new System.Windows.Forms.Button();
             this.buttonCancelRegistration = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -60,19 +60,18 @@
             this.labelRecoverPassword.ForeColor = System.Drawing.Color.Red;
             this.labelRecoverPassword.Location = new System.Drawing.Point(119, 224);
             this.labelRecoverPassword.Name = "labelRecoverPassword";
-            this.labelRecoverPassword.Size = new System.Drawing.Size(161, 13);
+            this.labelRecoverPassword.Size = new System.Drawing.Size(0, 13);
             this.labelRecoverPassword.TabIndex = 5;
-            this.labelRecoverPassword.Text = "Recovered password: ssdfsdfsdf";
             // 
-            // labelrecoverEmail
+            // labelRecoverEmail
             // 
-            this.labelrecoverEmail.AutoSize = true;
-            this.labelrecoverEmail.ForeColor = System.Drawing.Color.Red;
-            this.labelrecoverEmail.Location = new System.Drawing.Point(119, 201);
-            this.labelrecoverEmail.Name = "labelrecoverEmail";
-            this.labelrecoverEmail.Size = new System.Drawing.Size(160, 13);
-            this.labelrecoverEmail.TabIndex = 6;
-            this.labelrecoverEmail.Text = "Email sent to: sfdfdg@gmail.com";
+            this.labelRecoverEmail.AccessibleName = "";
+            this.labelRecoverEmail.AutoSize = true;
+            this.labelRecoverEmail.ForeColor = System.Drawing.Color.Red;
+            this.labelRecoverEmail.Location = new System.Drawing.Point(119, 201);
+            this.labelRecoverEmail.Name = "labelRecoverEmail";
+            this.labelRecoverEmail.Size = new System.Drawing.Size(0, 13);
+            this.labelRecoverEmail.TabIndex = 6;
             // 
             // buttonRecoverPassword
             // 
@@ -82,6 +81,7 @@
             this.buttonRecoverPassword.TabIndex = 7;
             this.buttonRecoverPassword.Text = "Recover Password";
             this.buttonRecoverPassword.UseVisualStyleBackColor = true;
+            this.buttonRecoverPassword.Click += new System.EventHandler(this.buttonRecoverPassword_Click);
             // 
             // buttonCancelRegistration
             // 
@@ -101,7 +101,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.buttonCancelRegistration);
             this.Controls.Add(this.buttonRecoverPassword);
-            this.Controls.Add(this.labelrecoverEmail);
+            this.Controls.Add(this.labelRecoverEmail);
             this.Controls.Add(this.labelRecoverPassword);
             this.Controls.Add(this.textBoxUserID);
             this.Controls.Add(this.labelUserID);
@@ -121,7 +121,7 @@
         private System.Windows.Forms.TextBox textBoxUserID;
         private System.Windows.Forms.Label labelUserID;
         private System.Windows.Forms.Label labelRecoverPassword;
-        private System.Windows.Forms.Label labelrecoverEmail;
+        private System.Windows.Forms.Label labelRecoverEmail;
         private System.Windows.Forms.Button buttonRecoverPassword;
         private System.Windows.Forms.Button buttonCancelRegistration;
     }

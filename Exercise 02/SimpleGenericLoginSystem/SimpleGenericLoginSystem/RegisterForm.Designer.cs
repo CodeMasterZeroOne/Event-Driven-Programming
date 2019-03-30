@@ -35,13 +35,13 @@
             this.labelRagisteringUserPassword = new System.Windows.Forms.Label();
             this.labelAccNumber = new System.Windows.Forms.Label();
             this.labelUserEmail = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboBoxRole = new System.Windows.Forms.ComboBox();
+            this.textBoxInputFirstName = new System.Windows.Forms.TextBox();
+            this.textBoxInputLastName = new System.Windows.Forms.TextBox();
+            this.textBoxInputUserID = new System.Windows.Forms.TextBox();
+            this.textBoxInputPassword = new System.Windows.Forms.TextBox();
+            this.textBoxInputAccountNumber = new System.Windows.Forms.TextBox();
+            this.textBoxInputEmail = new System.Windows.Forms.TextBox();
+            this.comboBoxInputRole = new System.Windows.Forms.ComboBox();
             this.labelRole = new System.Windows.Forms.Label();
             this.buttonRegisterUser = new System.Windows.Forms.Button();
             this.buttonCancelRegistration = new System.Windows.Forms.Button();
@@ -51,7 +51,7 @@
             // labelFirstName
             // 
             this.labelFirstName.AutoSize = true;
-            this.labelFirstName.Location = new System.Drawing.Point(46, 57);
+            this.labelFirstName.Location = new System.Drawing.Point(39, 68);
             this.labelFirstName.Name = "labelFirstName";
             this.labelFirstName.Size = new System.Drawing.Size(58, 13);
             this.labelFirstName.TabIndex = 0;
@@ -60,7 +60,7 @@
             // labelLastName
             // 
             this.labelLastName.AutoSize = true;
-            this.labelLastName.Location = new System.Drawing.Point(46, 83);
+            this.labelLastName.Location = new System.Drawing.Point(39, 94);
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(59, 13);
             this.labelLastName.TabIndex = 1;
@@ -69,7 +69,7 @@
             // labelUserID
             // 
             this.labelUserID.AutoSize = true;
-            this.labelUserID.Location = new System.Drawing.Point(46, 109);
+            this.labelUserID.Location = new System.Drawing.Point(39, 120);
             this.labelUserID.Name = "labelUserID";
             this.labelUserID.Size = new System.Drawing.Size(46, 13);
             this.labelUserID.TabIndex = 2;
@@ -78,7 +78,7 @@
             // labelRagisteringUserPassword
             // 
             this.labelRagisteringUserPassword.AutoSize = true;
-            this.labelRagisteringUserPassword.Location = new System.Drawing.Point(46, 135);
+            this.labelRagisteringUserPassword.Location = new System.Drawing.Point(39, 146);
             this.labelRagisteringUserPassword.Name = "labelRagisteringUserPassword";
             this.labelRagisteringUserPassword.Size = new System.Drawing.Size(56, 13);
             this.labelRagisteringUserPassword.TabIndex = 3;
@@ -87,7 +87,7 @@
             // labelAccNumber
             // 
             this.labelAccNumber.AutoSize = true;
-            this.labelAccNumber.Location = new System.Drawing.Point(46, 161);
+            this.labelAccNumber.Location = new System.Drawing.Point(39, 172);
             this.labelAccNumber.Name = "labelAccNumber";
             this.labelAccNumber.Size = new System.Drawing.Size(90, 13);
             this.labelAccNumber.TabIndex = 4;
@@ -96,78 +96,84 @@
             // labelUserEmail
             // 
             this.labelUserEmail.AutoSize = true;
-            this.labelUserEmail.Location = new System.Drawing.Point(46, 187);
+            this.labelUserEmail.Location = new System.Drawing.Point(39, 198);
             this.labelUserEmail.Name = "labelUserEmail";
             this.labelUserEmail.Size = new System.Drawing.Size(35, 13);
             this.labelUserEmail.TabIndex = 5;
             this.labelUserEmail.Text = "Email:";
             // 
-            // textBox1
+            // textBoxInputFirstName
             // 
-            this.textBox1.Location = new System.Drawing.Point(146, 54);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(157, 20);
-            this.textBox1.TabIndex = 6;
+            this.textBoxInputFirstName.Location = new System.Drawing.Point(139, 65);
+            this.textBoxInputFirstName.MaxLength = 25;
+            this.textBoxInputFirstName.Name = "textBoxInputFirstName";
+            this.textBoxInputFirstName.Size = new System.Drawing.Size(206, 20);
+            this.textBoxInputFirstName.TabIndex = 6;
             // 
-            // textBox2
+            // textBoxInputLastName
             // 
-            this.textBox2.Location = new System.Drawing.Point(146, 80);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(157, 20);
-            this.textBox2.TabIndex = 7;
+            this.textBoxInputLastName.Location = new System.Drawing.Point(139, 91);
+            this.textBoxInputLastName.MaxLength = 25;
+            this.textBoxInputLastName.Name = "textBoxInputLastName";
+            this.textBoxInputLastName.Size = new System.Drawing.Size(206, 20);
+            this.textBoxInputLastName.TabIndex = 7;
             // 
-            // textBox3
+            // textBoxInputUserID
             // 
-            this.textBox3.Location = new System.Drawing.Point(146, 106);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(157, 20);
-            this.textBox3.TabIndex = 8;
+            this.textBoxInputUserID.Location = new System.Drawing.Point(139, 117);
+            this.textBoxInputUserID.MaxLength = 8;
+            this.textBoxInputUserID.Name = "textBoxInputUserID";
+            this.textBoxInputUserID.Size = new System.Drawing.Size(206, 20);
+            this.textBoxInputUserID.TabIndex = 8;
             // 
-            // textBox4
+            // textBoxInputPassword
             // 
-            this.textBox4.Location = new System.Drawing.Point(146, 132);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(157, 20);
-            this.textBox4.TabIndex = 9;
+            this.textBoxInputPassword.Location = new System.Drawing.Point(139, 143);
+            this.textBoxInputPassword.MaxLength = 16;
+            this.textBoxInputPassword.Name = "textBoxInputPassword";
+            this.textBoxInputPassword.Size = new System.Drawing.Size(206, 20);
+            this.textBoxInputPassword.TabIndex = 9;
             // 
-            // textBox5
+            // textBoxInputAccountNumber
             // 
-            this.textBox5.Location = new System.Drawing.Point(146, 158);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(157, 20);
-            this.textBox5.TabIndex = 10;
+            this.textBoxInputAccountNumber.Location = new System.Drawing.Point(139, 169);
+            this.textBoxInputAccountNumber.MaxLength = 9;
+            this.textBoxInputAccountNumber.Name = "textBoxInputAccountNumber";
+            this.textBoxInputAccountNumber.Size = new System.Drawing.Size(206, 20);
+            this.textBoxInputAccountNumber.TabIndex = 10;
             // 
-            // textBox6
+            // textBoxInputEmail
             // 
-            this.textBox6.Location = new System.Drawing.Point(146, 184);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(157, 20);
-            this.textBox6.TabIndex = 11;
+            this.textBoxInputEmail.Location = new System.Drawing.Point(139, 195);
+            this.textBoxInputEmail.MaxLength = 35;
+            this.textBoxInputEmail.Name = "textBoxInputEmail";
+            this.textBoxInputEmail.Size = new System.Drawing.Size(206, 20);
+            this.textBoxInputEmail.TabIndex = 11;
             // 
-            // comboBoxRole
+            // comboBoxInputRole
             // 
-            this.comboBoxRole.FormattingEnabled = true;
-            this.comboBoxRole.Items.AddRange(new object[] {
-            "Super User (All Payments)",
-            "Super User",
-            "Administrator",
-            "Auditor",
-            "Account Operator",
+            this.comboBoxInputRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxInputRole.Items.AddRange(new object[] {
+            "Customer",
             "Balance Operator",
-            "Customer"});
-            this.comboBoxRole.Location = new System.Drawing.Point(146, 210);
-            this.comboBoxRole.Name = "comboBoxRole";
-            this.comboBoxRole.Size = new System.Drawing.Size(157, 21);
-            this.comboBoxRole.TabIndex = 12;
+            "Account Operator",
+            "Auditor",
+            "Administrator",
+            "Super User",
+            "Super User (All Payments)"});
+            this.comboBoxInputRole.Location = new System.Drawing.Point(139, 221);
+            this.comboBoxInputRole.Name = "comboBoxInputRole";
+            this.comboBoxInputRole.Size = new System.Drawing.Size(206, 21);
+            this.comboBoxInputRole.TabIndex = 12;
             // 
             // labelRole
             // 
             this.labelRole.AutoSize = true;
-            this.labelRole.Location = new System.Drawing.Point(46, 213);
+            this.labelRole.Location = new System.Drawing.Point(39, 224);
             this.labelRole.Name = "labelRole";
-            this.labelRole.Size = new System.Drawing.Size(29, 13);
+            this.labelRole.Size = new System.Drawing.Size(32, 13);
             this.labelRole.TabIndex = 13;
-            this.labelRole.Text = "Role";
+            this.labelRole.Text = "Role:";
             // 
             // buttonRegisterUser
             // 
@@ -209,13 +215,13 @@
             this.Controls.Add(this.buttonCancelRegistration);
             this.Controls.Add(this.buttonRegisterUser);
             this.Controls.Add(this.labelRole);
-            this.Controls.Add(this.comboBoxRole);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.comboBoxInputRole);
+            this.Controls.Add(this.textBoxInputEmail);
+            this.Controls.Add(this.textBoxInputAccountNumber);
+            this.Controls.Add(this.textBoxInputPassword);
+            this.Controls.Add(this.textBoxInputUserID);
+            this.Controls.Add(this.textBoxInputLastName);
+            this.Controls.Add(this.textBoxInputFirstName);
             this.Controls.Add(this.labelUserEmail);
             this.Controls.Add(this.labelAccNumber);
             this.Controls.Add(this.labelRagisteringUserPassword);
@@ -243,13 +249,13 @@
         private System.Windows.Forms.Label labelRagisteringUserPassword;
         private System.Windows.Forms.Label labelAccNumber;
         private System.Windows.Forms.Label labelUserEmail;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBoxRole;
+        private System.Windows.Forms.TextBox textBoxInputFirstName;
+        private System.Windows.Forms.TextBox textBoxInputLastName;
+        private System.Windows.Forms.TextBox textBoxInputUserID;
+        private System.Windows.Forms.TextBox textBoxInputPassword;
+        private System.Windows.Forms.TextBox textBoxInputAccountNumber;
+        private System.Windows.Forms.TextBox textBoxInputEmail;
+        private System.Windows.Forms.ComboBox comboBoxInputRole;
         private System.Windows.Forms.Label labelRole;
         private System.Windows.Forms.Button buttonRegisterUser;
         private System.Windows.Forms.Button buttonCancelRegistration;

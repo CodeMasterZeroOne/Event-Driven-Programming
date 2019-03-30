@@ -12,10 +12,12 @@ namespace SimpleGenericLoginSystem
 {
     public partial class ForgotPasswordForm : Form
     {
-        private RegisterForm registerForm;
-        private HelpForm helpForm;
         private LoginForm loginForm;
         private ForgotPasswordForm forgotPasswordForm;
+        private Label labelEmail;
+        private Label labelPassword;
+        private String email = "pawel@whatever.home";
+        private String password = "Dorian19";
 
         public ForgotPasswordForm()
         {
@@ -24,14 +26,24 @@ namespace SimpleGenericLoginSystem
 
         private void ForgotPasswordForm_Load(object sender, EventArgs e)
         {
-            loginForm = new LoginForm();
             forgotPasswordForm = this;
-    }
+            loginForm = new LoginForm();
+            labelEmail = Controls.Find("labelRecoverEmail", true).FirstOrDefault() as Label;
+            labelPassword = Controls.Find("labelRecoverPassword", true).FirstOrDefault() as Label;
+        }
 
         private void buttonCancelRegistration_Click(object sender, EventArgs e)
         {
             forgotPasswordForm.Close();
             loginForm.Show();
+        }
+
+        private void buttonRecoverPassword_Click(object sender, EventArgs e)
+        {
+            // validate user ID and if it exist
+            // display user email and password associated with this email
+            labelEmail.Text = "Email sent to: " + email;
+            labelPassword.Text = "Recovered password: " + password;
         }
     }
 }
