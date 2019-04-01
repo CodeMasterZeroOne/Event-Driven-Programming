@@ -37,7 +37,7 @@
             this.labelLastName = new System.Windows.Forms.Label();
             this.labelFirstName = new System.Windows.Forms.Label();
             this.buttonLogout = new System.Windows.Forms.Button();
-            this.buttonUpdateUser = new System.Windows.Forms.Button();
+            this.buttonChangePassword = new System.Windows.Forms.Button();
             this.linkLabelHelp = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
@@ -107,15 +107,15 @@
             this.buttonLogout.UseVisualStyleBackColor = true;
             this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
-            // buttonUpdateUser
+            // buttonChangePassword
             // 
-            this.buttonUpdateUser.Location = new System.Drawing.Point(13, 326);
-            this.buttonUpdateUser.Name = "buttonUpdateUser";
-            this.buttonUpdateUser.Size = new System.Drawing.Size(75, 23);
-            this.buttonUpdateUser.TabIndex = 22;
-            this.buttonUpdateUser.Text = "Update";
-            this.buttonUpdateUser.UseVisualStyleBackColor = true;
-            this.buttonUpdateUser.Click += new System.EventHandler(this.buttonUpdateUser_Click);
+            this.buttonChangePassword.Location = new System.Drawing.Point(13, 326);
+            this.buttonChangePassword.Name = "buttonChangePassword";
+            this.buttonChangePassword.Size = new System.Drawing.Size(113, 23);
+            this.buttonChangePassword.TabIndex = 22;
+            this.buttonChangePassword.Text = "Change password";
+            this.buttonChangePassword.UseVisualStyleBackColor = true;
+            this.buttonChangePassword.Click += new System.EventHandler(this.buttonChangePassword_Click);
             // 
             // linkLabelHelp
             // 
@@ -135,7 +135,7 @@
             this.ClientSize = new System.Drawing.Size(384, 361);
             this.ControlBox = false;
             this.Controls.Add(this.linkLabelHelp);
-            this.Controls.Add(this.buttonUpdateUser);
+            this.Controls.Add(this.buttonChangePassword);
             this.Controls.Add(this.buttonLogout);
             this.Controls.Add(this.labelRole);
             this.Controls.Add(this.labelUserEmail);
@@ -167,7 +167,7 @@
         private System.Windows.Forms.Label labelLastName;
         private System.Windows.Forms.Label labelFirstName;
         private System.Windows.Forms.Button buttonLogout;
-        private System.Windows.Forms.Button buttonUpdateUser;
+        private System.Windows.Forms.Button buttonChangePassword;
         private System.Windows.Forms.LinkLabel linkLabelHelp;
     }
 }

@@ -13,11 +13,6 @@ namespace SimpleGenericLoginSystem
     public partial class ForgotPasswordForm : Form
     {
         private LoginForm loginForm;
-        private ForgotPasswordForm forgotPasswordForm;
-        private Label labelEmail;
-        private Label labelPassword;
-        private String email = "pawel@whatever.home";
-        private String password = "Dorian19";
 
         public ForgotPasswordForm()
         {
@@ -26,15 +21,12 @@ namespace SimpleGenericLoginSystem
 
         private void ForgotPasswordForm_Load(object sender, EventArgs e)
         {
-            forgotPasswordForm = this;
             loginForm = new LoginForm();
-            labelEmail = Controls.Find("labelRecoverEmail", true).FirstOrDefault() as Label;
-            labelPassword = Controls.Find("labelRecoverPassword", true).FirstOrDefault() as Label;
         }
 
         private void buttonCancelRegistration_Click(object sender, EventArgs e)
         {
-            forgotPasswordForm.Close();
+            this.Close();
             loginForm.Show();
         }
 
@@ -42,8 +34,35 @@ namespace SimpleGenericLoginSystem
         {
             // validate user ID and if it exist
             // display user email and password associated with this email
-            labelEmail.Text = "Email sent to: " + email;
-            labelPassword.Text = "Recovered password: " + password;
+
+            string userID = textBoxUserID.Text;
+
+            Tuple<bool, DataRow> verifiedUser = DataManager.getDataManager().doesUserIdMatch(userID);
+
+            if (verifiedUser.Item1)
+            {
+                User user = DataManager.getDataManager().rowToUser(verifiedUser.Item2);
+                labelRecoverEmail.Text = "Email sent to: " + user.Email;
+                labelRecoverPassword.Text = "Dear "+ user.FirstName + ",\nPassword recovery was successful.";
+            }
+            else
+            {
+                //error msg
+                if (String.IsNullOrEmpty(userID))
+                {
+                    string message = "Please enter user ID to recover password.";
+                    string caption = "Input error";
+                    MessageBoxButtons buttons = MessageBoxButtons.OK;
+                    MessageBox.Show(message, caption, buttons);
+                }
+                else
+                {
+                    string message = "Please enter valid user ID.";
+                    string caption = "Validation error";
+                    MessageBoxButtons buttons = MessageBoxButtons.OK;
+                    MessageBox.Show(message, caption, buttons);
+                }
+            }
         }
     }
 }
