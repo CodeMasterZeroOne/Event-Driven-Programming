@@ -46,14 +46,23 @@ namespace SimpleGenericLoginSystem
             registerForm.Show();
         }
         /// <summary>
-        /// Event handler for linklabel help clicked
+        /// Event handler for ToolStrip menu item help clicked
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void linkLabelHelp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             helpForm = new HelpForm();
             helpForm.Show();
+        }
+        /// <summary>
+        /// Event handler for ToolStrip menu item File/Exit clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
         /// <summary>
         /// Event handler for forgot password linklabel clicked.

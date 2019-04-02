@@ -37,7 +37,11 @@
             this.linkLabelForgotPassword = new System.Windows.Forms.LinkLabel();
             this.labelNewUser = new System.Windows.Forms.Label();
             this.buttonUserRegister = new System.Windows.Forms.Button();
-            this.linkLabelHelp = new System.Windows.Forms.LinkLabel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelUserID
@@ -114,16 +118,38 @@
             this.buttonUserRegister.UseVisualStyleBackColor = true;
             this.buttonUserRegister.Click += new System.EventHandler(this.buttonUserRegister_Click);
             // 
-            // linkLabelHelp
+            // menuStrip1
             // 
-            this.linkLabelHelp.AutoSize = true;
-            this.linkLabelHelp.Location = new System.Drawing.Point(12, 9);
-            this.linkLabelHelp.Name = "linkLabelHelp";
-            this.linkLabelHelp.Size = new System.Drawing.Size(35, 13);
-            this.linkLabelHelp.TabIndex = 9;
-            this.linkLabelHelp.TabStop = true;
-            this.linkLabelHelp.Text = "Help?";
-            this.linkLabelHelp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelHelp_LinkClicked);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(384, 24);
+            this.menuStrip1.TabIndex = 10;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem1});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "&File";
+            // 
+            // exitToolStripMenuItem1
+            // 
+            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem1.Text = "&Exit";
+            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.exitToolStripMenuItem.Text = "&Help";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // LoginForm
             // 
@@ -131,7 +157,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 361);
-            this.Controls.Add(this.linkLabelHelp);
+            this.ControlBox = false;
             this.Controls.Add(this.buttonUserRegister);
             this.Controls.Add(this.labelNewUser);
             this.Controls.Add(this.linkLabelForgotPassword);
@@ -140,14 +166,18 @@
             this.Controls.Add(this.textBoxUserID);
             this.Controls.Add(this.labelUserPassword);
             this.Controls.Add(this.labelUserID);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Window";
             this.Load += new System.EventHandler(this.LoginForm_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,7 +193,10 @@
         private System.Windows.Forms.LinkLabel linkLabelForgotPassword;
         private System.Windows.Forms.Label labelNewUser;
         private System.Windows.Forms.Button buttonUserRegister;
-        private System.Windows.Forms.LinkLabel linkLabelHelp;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
 

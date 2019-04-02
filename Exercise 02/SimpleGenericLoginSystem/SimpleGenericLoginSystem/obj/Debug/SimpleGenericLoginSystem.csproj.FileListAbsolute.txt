@@ -14,3 +14,19 @@ C:\Users\Android\Documents\ICT Pawel\11 Event Driven Programming solutions (414)
 C:\Users\Android\Documents\ICT Pawel\11 Event Driven Programming solutions (414)\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.csprojAssemblyReference.cache
 C:\Users\Android\Documents\ICT Pawel\11 Event Driven Programming solutions (414)\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.ForgotPasswordForm.resources
 C:\Users\Android\Documents\ICT Pawel\11 Event Driven Programming solutions (414)\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.ChangePasswordForm.resources
+C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\bin\Debug\p_words.csv
+C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\bin\Debug\SimpleGenericLoginSystem.exe.config
+C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\bin\Debug\SimpleGenericLoginSystem.exe
+C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\bin\Debug\SimpleGenericLoginSystem.pdb
+C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.csprojAssemblyReference.cache
+C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.ChangePasswordForm.resources
+C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.ForgotPasswordForm.resources
+C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.HelpForm.resources
+C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.LoginForm.resources
+C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.Properties.Resources.resources
+C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.RegisterForm.resources
+C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.UserLoggedInForm.resources
+C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.csproj.GenerateResource.cache
+C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.csproj.CoreCompileInputs.cache
+C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.exe
+C:\Users\Pawel\Documents\School\Event-Driven-Programming\Exercise 02\SimpleGenericLoginSystem\SimpleGenericLoginSystem\obj\Debug\SimpleGenericLoginSystem.pdb
