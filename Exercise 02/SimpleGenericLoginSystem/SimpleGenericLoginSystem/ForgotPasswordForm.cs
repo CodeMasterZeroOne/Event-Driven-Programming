@@ -12,29 +12,39 @@ namespace SimpleGenericLoginSystem
 {
     public partial class ForgotPasswordForm : Form
     {
-        private LoginForm loginForm;
-
-        public ForgotPasswordForm()
+        private Form callingForm;
+        /// <summary>
+        /// Public method 
+        /// </summary>
+        /// <param name="callingForm"></param>
+        public ForgotPasswordForm(Form callingForm)
         {
+            this.callingForm = callingForm;
             InitializeComponent();
         }
 
         private void ForgotPasswordForm_Load(object sender, EventArgs e)
         {
-            loginForm = new LoginForm();
+            
         }
-
+        /// <summary>
+        /// Event handler for Cancel registration button clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonCancelRegistration_Click(object sender, EventArgs e)
         {
             this.Close();
-            loginForm.Show();
+            callingForm.Show();
         }
-
+        /// <summary>
+        /// Validate user ID and if it exist
+        /// display user email and password associated with this email
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonRecoverPassword_Click(object sender, EventArgs e)
         {
-            // validate user ID and if it exist
-            // display user email and password associated with this email
-
             string userID = textBoxUserID.Text;
 
             Tuple<bool, DataRow> verifiedUser = DataManager.getDataManager().doesUserIdMatch(userID);
@@ -47,7 +57,7 @@ namespace SimpleGenericLoginSystem
             }
             else
             {
-                //error msg
+                // error msg
                 if (String.IsNullOrEmpty(userID))
                 {
                     string message = "Please enter user ID to recover password.";

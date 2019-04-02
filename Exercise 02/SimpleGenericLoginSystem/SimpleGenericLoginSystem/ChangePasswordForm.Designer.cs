@@ -37,11 +37,11 @@
             this.buttonCancelRegistration = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBoxUserID
+            // textBoxNewPassword
             // 
             this.textBoxNewPassword.Location = new System.Drawing.Point(147, 122);
             this.textBoxNewPassword.MaxLength = 8;
-            this.textBoxNewPassword.Name = "textBoxUserID";
+            this.textBoxNewPassword.Name = "textBoxNewPassword";
             this.textBoxNewPassword.Size = new System.Drawing.Size(132, 20);
             this.textBoxNewPassword.TabIndex = 4;
             // 
@@ -110,6 +110,7 @@
             this.Name = "ChangePasswordForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Change password window";
+            this.Load += new System.EventHandler(this.ChangePasswordForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

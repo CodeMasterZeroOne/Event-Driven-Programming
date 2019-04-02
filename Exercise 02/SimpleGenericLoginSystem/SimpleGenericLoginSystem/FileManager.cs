@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace SimpleGenericLoginSystem
 {
+    /// <summary>
+    /// File mamnager sealed singleton class used to read from csv file
+    /// </summary>
     sealed class FileManager
     {
         private static FileManager fileManager;
@@ -19,7 +22,10 @@ namespace SimpleGenericLoginSystem
         {
 
         }
-
+        /// <summary>
+        /// Public method to get access to file manager
+        /// </summary>
+        /// <returns>FileManager</returns>
         public static FileManager getFileManager()
         {
             if(fileManager == null)
@@ -28,7 +34,10 @@ namespace SimpleGenericLoginSystem
             }
             return fileManager;
         }
-
+        /// <summary>
+        /// Public method for loading data table
+        /// </summary>
+        /// <returns>DataTable</returns>
         public DataTable LoadData()
         {
             DataTable dataTable = new DataTable();
@@ -60,7 +69,10 @@ namespace SimpleGenericLoginSystem
             
             return dataTable;
         }
-
+        /// <summary>
+        /// Public method for saving data
+        /// </summary>
+        /// <param name="dataTable"></param>
         public void SaveData(DataTable dataTable)
         {
             StringBuilder stringBuilder = new StringBuilder();

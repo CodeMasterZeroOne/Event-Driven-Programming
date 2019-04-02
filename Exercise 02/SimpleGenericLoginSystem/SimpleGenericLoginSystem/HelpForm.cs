@@ -21,7 +21,11 @@ namespace SimpleGenericLoginSystem
         {
 
         }
-
+        /// <summary>
+        /// Event handler for ok button clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonOk_Click(object sender, EventArgs e)
         {
             this.Hide();

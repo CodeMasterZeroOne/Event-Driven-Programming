@@ -46,20 +46,22 @@
             // textBoxHelp
             // 
             this.textBoxHelp.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBoxHelp.Enabled = false;
             this.textBoxHelp.Location = new System.Drawing.Point(12, 52);
             this.textBoxHelp.Multiline = true;
             this.textBoxHelp.Name = "textBoxHelp";
             this.textBoxHelp.ReadOnly = true;
+            this.textBoxHelp.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxHelp.Size = new System.Drawing.Size(360, 268);
-            this.textBoxHelp.TabIndex = 1;
+            this.textBoxHelp.TabIndex = 11;
+            this.textBoxHelp.TabStop = false;
+            this.textBoxHelp.Text = resources.GetString("textBoxHelp.Text");
             // 
             // buttonOk
             // 
             this.buttonOk.Location = new System.Drawing.Point(122, 326);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(145, 23);
-            this.buttonOk.TabIndex = 2;
+            this.buttonOk.TabIndex = 1;
             this.buttonOk.Text = "Ok, I understand.";
             this.buttonOk.UseVisualStyleBackColor = true;
             this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);

@@ -92,7 +92,11 @@ namespace PasswordValidator
         {
             return errorMessages;
         }
-
+        /// <summary>
+        /// Private method for counting characters.
+        /// </summary>
+        /// <param name="pw"></param>
+        /// <returns>int[] counts</returns>
         private static int[] getCharacterCounts(String pw)
         {
             int[] counts = new int[7];

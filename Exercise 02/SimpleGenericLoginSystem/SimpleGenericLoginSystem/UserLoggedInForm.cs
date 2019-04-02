@@ -10,29 +10,29 @@ using System.Windows.Forms;
 
 namespace SimpleGenericLoginSystem
 {
+    /// <summary>
+    /// Class UserLoggedInForm inherits from Form
+    /// </summary>
     public partial class UserLoggedInForm : Form
     {
-        private LoginForm loginForm;
+        private Form callingForm;
         private HelpForm helpForm;
 
         private User user;
 
-        public UserLoggedInForm(User user)
+        public UserLoggedInForm(Form callingForm, User user)
         {
+            this.callingForm = callingForm;
             this.user = user;
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Private method to initialize the values.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UserLoggedInForm_Load(object sender, EventArgs e)
         {
-
-            helpForm = new HelpForm();
-            loginForm = new LoginForm();
-            // find all created labels
-
-
-            // for testing those labels will be setup here and later this will be read from file
-
             labelFirstName.Text = "First name: " + user.FirstName;
             labelLastName.Text = "Last name: " + user.LastName;
             labelUserID.Text = "User ID: " + user.UserID;
@@ -40,22 +40,24 @@ namespace SimpleGenericLoginSystem
             labelAccountNumber.Text = "Account Number: " + user.AccountNumber;
             labelUserEmail.Text = "Email: " + user.Email;
             labelRole.Text = "Role: " + user.UserRole;
-    }
+        }
 
         private void buttonLogout_Click(object sender, EventArgs e)
         {
-            loginForm.Show();
+            this.Close();
+            callingForm.Show();
         }        
 
         private void linkLabelHelp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            helpForm = new HelpForm();
             helpForm.Show();
         }
 
         private void buttonChangePassword_Click(object sender, EventArgs e)
         {
-            new ChangePasswordForm(this).Show();
             this.Hide();
+            new ChangePasswordForm(this).Show();
         }
     }
 }

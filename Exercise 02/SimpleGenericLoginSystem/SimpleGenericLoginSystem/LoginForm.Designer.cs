@@ -38,7 +38,6 @@
             this.labelNewUser = new System.Windows.Forms.Label();
             this.buttonUserRegister = new System.Windows.Forms.Button();
             this.linkLabelHelp = new System.Windows.Forms.LinkLabel();
-            this.buttonExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelUserID
@@ -126,25 +125,12 @@
             this.linkLabelHelp.Text = "Help?";
             this.linkLabelHelp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelHelp_LinkClicked);
             // 
-            // buttonExit
-            // 
-            this.buttonExit.ForeColor = System.Drawing.Color.Black;
-            this.buttonExit.Image = ((System.Drawing.Image)(resources.GetObject("buttonExit.Image")));
-            this.buttonExit.Location = new System.Drawing.Point(336, 9);
-            this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(36, 36);
-            this.buttonExit.TabIndex = 10;
-            this.buttonExit.UseVisualStyleBackColor = true;
-            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
-            // 
             // LoginForm
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 361);
-            this.ControlBox = false;
-            this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.linkLabelHelp);
             this.Controls.Add(this.buttonUserRegister);
             this.Controls.Add(this.labelNewUser);
@@ -178,7 +164,6 @@
         private System.Windows.Forms.Label labelNewUser;
         private System.Windows.Forms.Button buttonUserRegister;
         private System.Windows.Forms.LinkLabel linkLabelHelp;
-        private System.Windows.Forms.Button buttonExit;
     }
 }
 

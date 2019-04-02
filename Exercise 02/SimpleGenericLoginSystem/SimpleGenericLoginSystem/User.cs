@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SimpleGenericLoginSystem
 {
+    /// <summary>
+    /// Public User class with all the fields, getters and setters.
+    /// </summary>
     public class User
     {
         private string firstName;

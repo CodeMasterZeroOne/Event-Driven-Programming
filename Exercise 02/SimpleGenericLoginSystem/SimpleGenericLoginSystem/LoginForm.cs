@@ -8,7 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/// <summary>
+/// LoginForm class responsible for login to banking system
+/// 
+/// </summary>
 namespace SimpleGenericLoginSystem
 {
     public partial class LoginForm : Form
@@ -18,82 +21,77 @@ namespace SimpleGenericLoginSystem
         private ForgotPasswordForm forgotPasswordForm;
         private UserLoggedInForm userLoggedInForm;
 
-        private DataTable dataTable;
+        private string userID;
+        private string userPassword;
 
         public LoginForm()
         {
             InitializeComponent();
-            //dataTable = FileManager.getFileManager().LoadData();
-            //// printing to console
-            //foreach (DataRow dataRow in dataTable.Rows)
-            //{
-            //    foreach (var item in dataRow.ItemArray)
-            //    {
-            //        Debug.Write(item + " ");
-            //    }
-            //    Debug.WriteLine("");
-            //}
-            //Debug.WriteLine(DataManager.getDataManager().doesUserExist("laucon09"));
-            //Debug.WriteLine(DataManager.getDataManager().doesUserExist("Dupek"));
-            //Debug.WriteLine(DataManager.getDataManager().doesPasswordMatch("laucon09", "notapassword"));
-            //Debug.WriteLine(DataManager.getDataManager().doesPasswordMatch("laucon09", "GarnishIsland-09"));
-            //Debug.WriteLine(DataManager.getDataManager().doesPasswordMatch("lauco86n09", "GarnishIsland-09"));
-            //Tuple<bool, DataRow> myTuple = DataManager.getDataManager().doesPasswordMatch("laucon09", "GarnishIsland-09");
-            //Debug.WriteLine(myTuple.Item1);
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-            helpForm = new HelpForm();
-            registerForm = new RegisterForm();
-            forgotPasswordForm = new ForgotPasswordForm();
             
         }
-
+        /// <summary>
+        /// Event handler for register user button clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonUserRegister_Click(object sender, EventArgs e)
         {
+            resetInputFields();
             this.Hide();
+            registerForm = new RegisterForm(this);
             registerForm.Show();
         }
-
+        /// <summary>
+        /// Event handler for linklabel help clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void linkLabelHelp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            helpForm = new HelpForm();
             helpForm.Show();
         }
-
+        /// <summary>
+        /// Event handler for forgot password linklabel clicked.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void linkLabelForgotPassword_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            forgotPasswordForm.Show();
+            resetInputFields();
             this.Hide();
+            forgotPasswordForm = new ForgotPasswordForm(this);
+            forgotPasswordForm.Show();
         }
-
-        private void buttonExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
+        /// <summary>
+        /// Validate the user and if validated show successful login window if
+        /// not show error message incorect password or user Id
+        /// If userID and password == "fred" 
+        /// then user is super user with all the privileges
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonUserLogin_Click(object sender, EventArgs e)
         {
-            // validate the user and if validated show successful login window if
-            // not show error message incorect password or user Id
-
-            // if userID and password == "fred" 
-            // then user is super user
-            
-            string userID = textBoxUserID.Text;
-            string userPassword = textBoxUserPassword.Text;
+            userID = textBoxUserID.Text;
+            userPassword = textBoxUserPassword.Text;
 
             Tuple<bool, DataRow> verifiedUser = DataManager.getDataManager().doesPasswordMatch(userID, userPassword);
 
             if (verifiedUser.Item1)
             {
-                userLoggedInForm = new UserLoggedInForm(DataManager.getDataManager().rowToUser(verifiedUser.Item2));
+                resetInputFields();
                 this.Hide();
+                userLoggedInForm = new UserLoggedInForm(this, DataManager.getDataManager().rowToUser(verifiedUser.Item2));
                 userLoggedInForm.Show();
             }
-           
             else
             {
+                resetInputFields();
                 //error msg
                 if (String.IsNullOrEmpty(userID) || String.IsNullOrEmpty(userPassword))
                 {
@@ -110,6 +108,12 @@ namespace SimpleGenericLoginSystem
                     MessageBox.Show(message, caption, buttons);
                 }
             }
+        }
+
+        public void resetInputFields()
+        {
+            textBoxUserID.Text = "";
+            textBoxUserPassword.Text = "";
         }
     }
 }
