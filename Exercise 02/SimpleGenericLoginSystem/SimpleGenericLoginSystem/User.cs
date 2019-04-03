@@ -44,5 +44,179 @@ namespace SimpleGenericLoginSystem
         public bool ManageAccount { get => manageAccount; set => manageAccount = value; }
         public bool ViewAccountInformation { get => viewAccountInformation; set => viewAccountInformation = value; }
         public bool ViewAccountBalances { get => viewAccountBalances; set => viewAccountBalances = value; }
+        /// <summary>
+        /// Public method that sets up user privilages based on the Role choosen 
+        /// </summary>
+        /// <param name="index"></param>
+        public void setUsersRole(int index)
+        {
+            switch (index)
+            {
+                case 1: //Balance Operator
+                    administrationFullAccess = false;
+                    administrationReportPrivileges = false;
+                    generateAuditRecords = false;
+                    viewAuditRecords = false;
+                    inputAccountPayments = false;
+                    authoriseAccountPayments = false;
+                    manageAccount = false;
+                    viewAccountInformation = false;
+                    viewAccountBalances = true;
+                    break;
+                case 2: //Account Operator
+                    administrationFullAccess = false;
+                    administrationReportPrivileges = false;
+                    generateAuditRecords = false;
+                    viewAuditRecords = false;
+                    inputAccountPayments = false;
+                    authoriseAccountPayments = false;
+                    manageAccount = true;
+                    viewAccountInformation = true;
+                    viewAccountBalances = true;
+                    break;
+                case 3: //Auditor
+                    administrationFullAccess = false;
+                    administrationReportPrivileges = true;
+                    generateAuditRecords = false;
+                    viewAuditRecords = true;
+                    inputAccountPayments = false;
+                    authoriseAccountPayments = false;
+                    manageAccount = false;
+                    viewAccountInformation = false;
+                    viewAccountBalances = false;
+                    break;
+                case 4: //Administrator
+                    administrationFullAccess = true;
+                    administrationReportPrivileges = false;
+                    generateAuditRecords = false;
+                    viewAuditRecords = false;
+                    inputAccountPayments = false;
+                    authoriseAccountPayments = false;
+                    manageAccount = false;
+                    viewAccountInformation = false;
+                    viewAccountBalances = false;
+                    break;
+                case 5: //Super User
+                    administrationFullAccess = true;
+                    administrationReportPrivileges = true;
+                    generateAuditRecords = false;
+                    viewAuditRecords = true;
+                    inputAccountPayments = false;
+                    authoriseAccountPayments = false;
+                    manageAccount = false;
+                    viewAccountInformation = true;
+                    viewAccountBalances = true;
+                    break;
+                case 6: //Super User (All Payments)
+                    administrationFullAccess = true;
+                    administrationReportPrivileges = true;
+                    generateAuditRecords = true;
+                    viewAuditRecords = true;
+                    inputAccountPayments = true;
+                    authoriseAccountPayments = true;
+                    manageAccount = true;
+                    viewAccountInformation = true;
+                    viewAccountBalances = true;
+                    break;
+                default: //Customer
+                    administrationFullAccess = false;
+                    administrationReportPrivileges = false;
+                    generateAuditRecords = false;
+                    viewAuditRecords = false;
+                    inputAccountPayments = false;
+                    authoriseAccountPayments = false;
+                    manageAccount = false;
+                    viewAccountInformation = false;
+                    viewAccountBalances = true;
+                    break;
+            }
+
+
+        }
+        public void setUsersRole(string role)
+        {
+            switch (role)
+            {
+                case "Customer":
+                    administrationFullAccess = false;
+                    administrationReportPrivileges = false;
+                    generateAuditRecords = false;
+                    viewAuditRecords = false;
+                    inputAccountPayments = false;
+                    authoriseAccountPayments = false;
+                    manageAccount = false;
+                    viewAccountInformation = false;
+                    viewAccountBalances = true;
+                    break;
+                case "Balance Operator":
+                    administrationFullAccess = false;
+                    administrationReportPrivileges = false;
+                    generateAuditRecords = false;
+                    viewAuditRecords = false;
+                    inputAccountPayments = false;
+                    authoriseAccountPayments = false;
+                    manageAccount = false;
+                    viewAccountInformation = false;
+                    viewAccountBalances = true;
+                    break;
+                case "Account Operator":
+                    administrationFullAccess = false;
+                    administrationReportPrivileges = false;
+                    generateAuditRecords = false;
+                    viewAuditRecords = false;
+                    inputAccountPayments = false;
+                    authoriseAccountPayments = false;
+                    manageAccount = true;
+                    viewAccountInformation = true;
+                    viewAccountBalances = true;
+                    break;
+                case "Auditor":
+                    administrationFullAccess = false;
+                    administrationReportPrivileges = true;
+                    generateAuditRecords = false;
+                    viewAuditRecords = true;
+                    inputAccountPayments = false;
+                    authoriseAccountPayments = false;
+                    manageAccount = false;
+                    viewAccountInformation = false;
+                    viewAccountBalances = false;
+                    break;
+                case "Administrator":
+                    administrationFullAccess = true;
+                    administrationReportPrivileges = false;
+                    generateAuditRecords = false;
+                    viewAuditRecords = false;
+                    inputAccountPayments = false;
+                    authoriseAccountPayments = false;
+                    manageAccount = false;
+                    viewAccountInformation = false;
+                    viewAccountBalances = false;
+                    break;
+                case "Super User":
+                    administrationFullAccess = true;
+                    administrationReportPrivileges = true;
+                    generateAuditRecords = false;
+                    viewAuditRecords = true;
+                    inputAccountPayments = false;
+                    authoriseAccountPayments = false;
+                    manageAccount = false;
+                    viewAccountInformation = true;
+                    viewAccountBalances = true;
+                    break;
+                case "Super User (All Payments)":
+                    administrationFullAccess = true;
+                    administrationReportPrivileges = true;
+                    generateAuditRecords = true;
+                    viewAuditRecords = true;
+                    inputAccountPayments = true;
+                    authoriseAccountPayments = true;
+                    manageAccount = true;
+                    viewAccountInformation = true;
+                    viewAccountBalances = true;
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

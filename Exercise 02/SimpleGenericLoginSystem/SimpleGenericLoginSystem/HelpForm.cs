@@ -12,6 +12,9 @@ namespace SimpleGenericLoginSystem
 {
     public partial class HelpForm : Form
     {
+        /// <summary>
+        /// Initializing component
+        /// </summary>
         public HelpForm()
         {
             InitializeComponent();

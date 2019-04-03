@@ -14,8 +14,8 @@ namespace SimpleGenericLoginSystem
     {
         private Form callingForm;
         private HelpForm helpForm;
+        private User user;
 
-        private ComboBox defaultRole;
         /// <summary>
         /// Public method for initialization of the values.
         /// </summary>
@@ -23,25 +23,19 @@ namespace SimpleGenericLoginSystem
         public RegisterForm(Form callingForm)
         {
             this.callingForm = callingForm;
+            this.user = new User();
             InitializeComponent();
         }
 
         private void RegisterForm_Load(object sender, EventArgs e)
         {
-            defaultRole = Controls.Find("comboBoxInputRole", true).FirstOrDefault() as ComboBox;
-            defaultRole.SelectedIndex = 0; // index 0 is "Customer" default value
+            comboBoxInputRole.SelectedIndex = 0;
         }
 
         private void buttonCancelRegistration_Click(object sender, EventArgs e)
         {
             this.Close();
             callingForm.Show();
-        }
-
-        private void linkLabelHelp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            helpForm = new HelpForm();
-            helpForm.Show();
         }
 
         private void buttonRegisterUser_Click(object sender, EventArgs e)
@@ -65,6 +59,32 @@ namespace SimpleGenericLoginSystem
                 MessageBox.Show(message, caption, buttons, MessageBoxIcon.Asterisk);
                 callingForm.Show();
             }
+        }
+
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            helpForm = new HelpForm();
+            helpForm.Show();
+        }
+
+        private void comboBoxInputRole_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            user.setUsersRole(comboBoxInputRole.SelectedIndex);
+            labelUserPrivilages.Text = "User privilages: " +
+                "\nView Account Information: " + user.ViewAccountInformation +
+                "      View Account Balances:             " + user.ViewAccountBalances +
+                "\nManage Account:              " + user.ManageAccount +
+                "      Authorise Account Payments:      " + user.AuthoriseAccountPayments +
+                "\nInput Account Payments:   " + user.InputAccountPayments +
+                "      View Audit Records:                    " + user.ViewAuditRecords +
+                "\nGenerate Audit Records:    " + user.GenerateAuditRecords +
+                "      Administration Report Privileges:  " + user.AdministrationReportPrivileges +
+                "\nAdministration Full Access:  " + user.AdministrationFullAccess;
         }
     }
 }

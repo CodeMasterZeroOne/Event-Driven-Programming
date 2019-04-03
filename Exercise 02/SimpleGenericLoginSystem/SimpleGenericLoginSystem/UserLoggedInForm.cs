@@ -19,7 +19,11 @@ namespace SimpleGenericLoginSystem
         private HelpForm helpForm;
 
         private User user;
-
+        /// <summary>
+        /// Initialize component
+        /// </summary>
+        /// <param name="callingForm"></param>
+        /// <param name="user"></param>
         public UserLoggedInForm(Form callingForm, User user)
         {
             this.callingForm = callingForm;
@@ -40,6 +44,18 @@ namespace SimpleGenericLoginSystem
             labelAccountNumber.Text = "Account Number: " + user.AccountNumber;
             labelUserEmail.Text = "Email: " + user.Email;
             labelRole.Text = "Role: " + user.UserRole;
+
+            user.setUsersRole(user.UserRole);
+            labelUserPrivilages.Text = "User privilages: " +
+                "\nView Account Information: " + user.ViewAccountInformation +
+                "      View Account Balances:             " + user.ViewAccountBalances +
+                "\nManage Account:              " + user.ManageAccount +
+                "      Authorise Account Payments:      " + user.AuthoriseAccountPayments +
+                "\nInput Account Payments:   " + user.InputAccountPayments +
+                "      View Audit Records:                    " + user.ViewAuditRecords +
+                "\nGenerate Audit Records:    " + user.GenerateAuditRecords +
+                "      Administration Report Privileges:  " + user.AdministrationReportPrivileges +
+                "\nAdministration Full Access:  " + user.AdministrationFullAccess;
         }
 
         private void buttonLogout_Click(object sender, EventArgs e)
@@ -48,16 +64,21 @@ namespace SimpleGenericLoginSystem
             callingForm.Show();
         }        
 
-        private void linkLabelHelp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            helpForm = new HelpForm();
-            helpForm.Show();
-        }
-
         private void buttonChangePassword_Click(object sender, EventArgs e)
         {
             this.Hide();
             new ChangePasswordForm(this).Show();
+        }
+
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            helpForm = new HelpForm();
+            helpForm.Show();
         }
     }
 }

@@ -45,13 +45,18 @@
             this.labelRole = new System.Windows.Forms.Label();
             this.buttonRegisterUser = new System.Windows.Forms.Button();
             this.buttonCancelRegistration = new System.Windows.Forms.Button();
-            this.linkLabelHelp = new System.Windows.Forms.LinkLabel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.labelUserPrivilages = new System.Windows.Forms.Label();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelFirstName
             // 
             this.labelFirstName.AutoSize = true;
-            this.labelFirstName.Location = new System.Drawing.Point(39, 68);
+            this.labelFirstName.Location = new System.Drawing.Point(40, 35);
             this.labelFirstName.Name = "labelFirstName";
             this.labelFirstName.Size = new System.Drawing.Size(58, 13);
             this.labelFirstName.TabIndex = 0;
@@ -60,7 +65,7 @@
             // labelLastName
             // 
             this.labelLastName.AutoSize = true;
-            this.labelLastName.Location = new System.Drawing.Point(39, 94);
+            this.labelLastName.Location = new System.Drawing.Point(40, 61);
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(59, 13);
             this.labelLastName.TabIndex = 1;
@@ -69,7 +74,7 @@
             // labelUserID
             // 
             this.labelUserID.AutoSize = true;
-            this.labelUserID.Location = new System.Drawing.Point(39, 120);
+            this.labelUserID.Location = new System.Drawing.Point(40, 87);
             this.labelUserID.Name = "labelUserID";
             this.labelUserID.Size = new System.Drawing.Size(46, 13);
             this.labelUserID.TabIndex = 2;
@@ -78,7 +83,7 @@
             // labelRagisteringUserPassword
             // 
             this.labelRagisteringUserPassword.AutoSize = true;
-            this.labelRagisteringUserPassword.Location = new System.Drawing.Point(39, 146);
+            this.labelRagisteringUserPassword.Location = new System.Drawing.Point(40, 113);
             this.labelRagisteringUserPassword.Name = "labelRagisteringUserPassword";
             this.labelRagisteringUserPassword.Size = new System.Drawing.Size(56, 13);
             this.labelRagisteringUserPassword.TabIndex = 3;
@@ -87,7 +92,7 @@
             // labelAccNumber
             // 
             this.labelAccNumber.AutoSize = true;
-            this.labelAccNumber.Location = new System.Drawing.Point(39, 172);
+            this.labelAccNumber.Location = new System.Drawing.Point(40, 139);
             this.labelAccNumber.Name = "labelAccNumber";
             this.labelAccNumber.Size = new System.Drawing.Size(90, 13);
             this.labelAccNumber.TabIndex = 4;
@@ -96,7 +101,7 @@
             // labelUserEmail
             // 
             this.labelUserEmail.AutoSize = true;
-            this.labelUserEmail.Location = new System.Drawing.Point(39, 198);
+            this.labelUserEmail.Location = new System.Drawing.Point(40, 165);
             this.labelUserEmail.Name = "labelUserEmail";
             this.labelUserEmail.Size = new System.Drawing.Size(35, 13);
             this.labelUserEmail.TabIndex = 5;
@@ -104,7 +109,7 @@
             // 
             // textBoxInputFirstName
             // 
-            this.textBoxInputFirstName.Location = new System.Drawing.Point(139, 65);
+            this.textBoxInputFirstName.Location = new System.Drawing.Point(140, 32);
             this.textBoxInputFirstName.MaxLength = 25;
             this.textBoxInputFirstName.Name = "textBoxInputFirstName";
             this.textBoxInputFirstName.Size = new System.Drawing.Size(206, 20);
@@ -112,7 +117,7 @@
             // 
             // textBoxInputLastName
             // 
-            this.textBoxInputLastName.Location = new System.Drawing.Point(139, 91);
+            this.textBoxInputLastName.Location = new System.Drawing.Point(140, 58);
             this.textBoxInputLastName.MaxLength = 25;
             this.textBoxInputLastName.Name = "textBoxInputLastName";
             this.textBoxInputLastName.Size = new System.Drawing.Size(206, 20);
@@ -120,7 +125,7 @@
             // 
             // textBoxInputUserID
             // 
-            this.textBoxInputUserID.Location = new System.Drawing.Point(139, 117);
+            this.textBoxInputUserID.Location = new System.Drawing.Point(140, 84);
             this.textBoxInputUserID.MaxLength = 8;
             this.textBoxInputUserID.Name = "textBoxInputUserID";
             this.textBoxInputUserID.Size = new System.Drawing.Size(206, 20);
@@ -128,7 +133,7 @@
             // 
             // textBoxInputPassword
             // 
-            this.textBoxInputPassword.Location = new System.Drawing.Point(139, 143);
+            this.textBoxInputPassword.Location = new System.Drawing.Point(140, 110);
             this.textBoxInputPassword.MaxLength = 16;
             this.textBoxInputPassword.Name = "textBoxInputPassword";
             this.textBoxInputPassword.Size = new System.Drawing.Size(206, 20);
@@ -136,7 +141,7 @@
             // 
             // textBoxInputAccountNumber
             // 
-            this.textBoxInputAccountNumber.Location = new System.Drawing.Point(139, 169);
+            this.textBoxInputAccountNumber.Location = new System.Drawing.Point(140, 136);
             this.textBoxInputAccountNumber.MaxLength = 9;
             this.textBoxInputAccountNumber.Name = "textBoxInputAccountNumber";
             this.textBoxInputAccountNumber.Size = new System.Drawing.Size(206, 20);
@@ -144,7 +149,7 @@
             // 
             // textBoxInputEmail
             // 
-            this.textBoxInputEmail.Location = new System.Drawing.Point(139, 195);
+            this.textBoxInputEmail.Location = new System.Drawing.Point(140, 162);
             this.textBoxInputEmail.MaxLength = 35;
             this.textBoxInputEmail.Name = "textBoxInputEmail";
             this.textBoxInputEmail.Size = new System.Drawing.Size(206, 20);
@@ -161,15 +166,16 @@
             "Administrator",
             "Super User",
             "Super User (All Payments)"});
-            this.comboBoxInputRole.Location = new System.Drawing.Point(139, 221);
+            this.comboBoxInputRole.Location = new System.Drawing.Point(140, 188);
             this.comboBoxInputRole.Name = "comboBoxInputRole";
             this.comboBoxInputRole.Size = new System.Drawing.Size(206, 21);
             this.comboBoxInputRole.TabIndex = 12;
+            this.comboBoxInputRole.SelectedIndexChanged += new System.EventHandler(this.comboBoxInputRole_SelectedIndexChanged);
             // 
             // labelRole
             // 
             this.labelRole.AutoSize = true;
-            this.labelRole.Location = new System.Drawing.Point(39, 224);
+            this.labelRole.Location = new System.Drawing.Point(40, 191);
             this.labelRole.Name = "labelRole";
             this.labelRole.Size = new System.Drawing.Size(32, 13);
             this.labelRole.TabIndex = 13;
@@ -195,16 +201,46 @@
             this.buttonCancelRegistration.UseVisualStyleBackColor = true;
             this.buttonCancelRegistration.Click += new System.EventHandler(this.buttonCancelRegistration_Click);
             // 
-            // linkLabelHelp
+            // menuStrip1
             // 
-            this.linkLabelHelp.AutoSize = true;
-            this.linkLabelHelp.Location = new System.Drawing.Point(10, 9);
-            this.linkLabelHelp.Name = "linkLabelHelp";
-            this.linkLabelHelp.Size = new System.Drawing.Size(35, 13);
-            this.linkLabelHelp.TabIndex = 16;
-            this.linkLabelHelp.TabStop = true;
-            this.linkLabelHelp.Text = "Help?";
-            this.linkLabelHelp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelHelp_LinkClicked);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(384, 24);
+            this.menuStrip1.TabIndex = 25;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem1});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "&File";
+            // 
+            // exitToolStripMenuItem1
+            // 
+            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(92, 22);
+            this.exitToolStripMenuItem1.Text = "&Exit";
+            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.exitToolStripMenuItem.Text = "&Help";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // labelUserPrivilages
+            // 
+            this.labelUserPrivilages.AutoSize = true;
+            this.labelUserPrivilages.Location = new System.Drawing.Point(13, 231);
+            this.labelUserPrivilages.Name = "labelUserPrivilages";
+            this.labelUserPrivilages.Size = new System.Drawing.Size(0, 13);
+            this.labelUserPrivilages.TabIndex = 26;
             // 
             // RegisterForm
             // 
@@ -212,7 +248,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 361);
             this.ControlBox = false;
-            this.Controls.Add(this.linkLabelHelp);
+            this.Controls.Add(this.labelUserPrivilages);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.buttonCancelRegistration);
             this.Controls.Add(this.buttonRegisterUser);
             this.Controls.Add(this.labelRole);
@@ -237,6 +274,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register Window";
             this.Load += new System.EventHandler(this.RegisterForm_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,6 +299,10 @@
         private System.Windows.Forms.Label labelRole;
         private System.Windows.Forms.Button buttonRegisterUser;
         private System.Windows.Forms.Button buttonCancelRegistration;
-        private System.Windows.Forms.LinkLabel linkLabelHelp;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Label labelUserPrivilages;
     }
 }

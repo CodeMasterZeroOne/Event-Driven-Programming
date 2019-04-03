@@ -69,6 +69,7 @@
             this.textBoxUserID.Name = "textBoxUserID";
             this.textBoxUserID.Size = new System.Drawing.Size(132, 20);
             this.textBoxUserID.TabIndex = 2;
+            this.textBoxUserID.TextChanged += new System.EventHandler(this.textBoxUserID_TextChanged);
             // 
             // textBoxUserPassword
             // 
@@ -77,9 +78,12 @@
             this.textBoxUserPassword.Name = "textBoxUserPassword";
             this.textBoxUserPassword.Size = new System.Drawing.Size(132, 20);
             this.textBoxUserPassword.TabIndex = 3;
+            this.textBoxUserPassword.UseSystemPasswordChar = true;
+            this.textBoxUserPassword.TextChanged += new System.EventHandler(this.textBoxUserID_TextChanged);
             // 
             // buttonUserLogin
             // 
+            this.buttonUserLogin.Enabled = false;
             this.buttonUserLogin.Location = new System.Drawing.Point(174, 174);
             this.buttonUserLogin.Name = "buttonUserLogin";
             this.buttonUserLogin.Size = new System.Drawing.Size(75, 23);
@@ -140,7 +144,7 @@
             // exitToolStripMenuItem1
             // 
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem1.Text = "&Exit";
             this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 

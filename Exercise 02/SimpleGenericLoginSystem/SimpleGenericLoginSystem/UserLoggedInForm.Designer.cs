@@ -38,13 +38,18 @@
             this.labelFirstName = new System.Windows.Forms.Label();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.buttonChangePassword = new System.Windows.Forms.Button();
-            this.linkLabelHelp = new System.Windows.Forms.LinkLabel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.labelUserPrivilages = new System.Windows.Forms.Label();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelRole
             // 
             this.labelRole.AutoSize = true;
-            this.labelRole.Location = new System.Drawing.Point(67, 219);
+            this.labelRole.Location = new System.Drawing.Point(41, 193);
             this.labelRole.Name = "labelRole";
             this.labelRole.Size = new System.Drawing.Size(0, 13);
             this.labelRole.TabIndex = 20;
@@ -52,7 +57,7 @@
             // labelUserEmail
             // 
             this.labelUserEmail.AutoSize = true;
-            this.labelUserEmail.Location = new System.Drawing.Point(67, 193);
+            this.labelUserEmail.Location = new System.Drawing.Point(41, 167);
             this.labelUserEmail.Name = "labelUserEmail";
             this.labelUserEmail.Size = new System.Drawing.Size(0, 13);
             this.labelUserEmail.TabIndex = 19;
@@ -60,7 +65,7 @@
             // labelAccountNumber
             // 
             this.labelAccountNumber.AutoSize = true;
-            this.labelAccountNumber.Location = new System.Drawing.Point(67, 167);
+            this.labelAccountNumber.Location = new System.Drawing.Point(41, 141);
             this.labelAccountNumber.Name = "labelAccountNumber";
             this.labelAccountNumber.Size = new System.Drawing.Size(0, 13);
             this.labelAccountNumber.TabIndex = 18;
@@ -68,7 +73,7 @@
             // labelRagisteringUserPassword
             // 
             this.labelRagisteringUserPassword.AutoSize = true;
-            this.labelRagisteringUserPassword.Location = new System.Drawing.Point(67, 141);
+            this.labelRagisteringUserPassword.Location = new System.Drawing.Point(41, 115);
             this.labelRagisteringUserPassword.Name = "labelRagisteringUserPassword";
             this.labelRagisteringUserPassword.Size = new System.Drawing.Size(0, 13);
             this.labelRagisteringUserPassword.TabIndex = 17;
@@ -76,7 +81,7 @@
             // labelUserID
             // 
             this.labelUserID.AutoSize = true;
-            this.labelUserID.Location = new System.Drawing.Point(67, 115);
+            this.labelUserID.Location = new System.Drawing.Point(41, 89);
             this.labelUserID.Name = "labelUserID";
             this.labelUserID.Size = new System.Drawing.Size(0, 13);
             this.labelUserID.TabIndex = 16;
@@ -84,7 +89,7 @@
             // labelLastName
             // 
             this.labelLastName.AutoSize = true;
-            this.labelLastName.Location = new System.Drawing.Point(67, 89);
+            this.labelLastName.Location = new System.Drawing.Point(41, 63);
             this.labelLastName.Name = "labelLastName";
             this.labelLastName.Size = new System.Drawing.Size(0, 13);
             this.labelLastName.TabIndex = 15;
@@ -92,7 +97,7 @@
             // labelFirstName
             // 
             this.labelFirstName.AutoSize = true;
-            this.labelFirstName.Location = new System.Drawing.Point(67, 63);
+            this.labelFirstName.Location = new System.Drawing.Point(41, 37);
             this.labelFirstName.Name = "labelFirstName";
             this.labelFirstName.Size = new System.Drawing.Size(0, 13);
             this.labelFirstName.TabIndex = 14;
@@ -117,16 +122,46 @@
             this.buttonChangePassword.UseVisualStyleBackColor = true;
             this.buttonChangePassword.Click += new System.EventHandler(this.buttonChangePassword_Click);
             // 
-            // linkLabelHelp
+            // menuStrip1
             // 
-            this.linkLabelHelp.AutoSize = true;
-            this.linkLabelHelp.Location = new System.Drawing.Point(10, 9);
-            this.linkLabelHelp.Name = "linkLabelHelp";
-            this.linkLabelHelp.Size = new System.Drawing.Size(35, 13);
-            this.linkLabelHelp.TabIndex = 23;
-            this.linkLabelHelp.TabStop = true;
-            this.linkLabelHelp.Text = "Help?";
-            this.linkLabelHelp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelHelp_LinkClicked);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(384, 24);
+            this.menuStrip1.TabIndex = 24;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem1});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "&File";
+            // 
+            // exitToolStripMenuItem1
+            // 
+            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(92, 22);
+            this.exitToolStripMenuItem1.Text = "&Exit";
+            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.exitToolStripMenuItem.Text = "&Help";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // labelUserPrivilages
+            // 
+            this.labelUserPrivilages.AutoSize = true;
+            this.labelUserPrivilages.Location = new System.Drawing.Point(10, 215);
+            this.labelUserPrivilages.Name = "labelUserPrivilages";
+            this.labelUserPrivilages.Size = new System.Drawing.Size(0, 13);
+            this.labelUserPrivilages.TabIndex = 25;
             // 
             // UserLoggedInForm
             // 
@@ -134,7 +169,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 361);
             this.ControlBox = false;
-            this.Controls.Add(this.linkLabelHelp);
+            this.Controls.Add(this.labelUserPrivilages);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.buttonChangePassword);
             this.Controls.Add(this.buttonLogout);
             this.Controls.Add(this.labelRole);
@@ -152,6 +188,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login successful";
             this.Load += new System.EventHandler(this.UserLoggedInForm_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,6 +206,10 @@
         private System.Windows.Forms.Label labelFirstName;
         private System.Windows.Forms.Button buttonLogout;
         private System.Windows.Forms.Button buttonChangePassword;
-        private System.Windows.Forms.LinkLabel linkLabelHelp;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Label labelUserPrivilages;
     }
 }

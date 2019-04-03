@@ -16,6 +16,7 @@ namespace SimpleGenericLoginSystem
     public partial class ChangePasswordForm : Form
     {
         private Form callingForm;
+        private HelpForm helpForm;
 
         /// <summary>
         /// Public method that initializes all the values
@@ -59,6 +60,17 @@ namespace SimpleGenericLoginSystem
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
                 MessageBox.Show(message, caption, buttons, MessageBoxIcon.Error);
             }
+        }
+
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            helpForm = new HelpForm();
+            helpForm.Show();
         }
 
         private void ChangePasswordForm_Load(object sender, EventArgs e)

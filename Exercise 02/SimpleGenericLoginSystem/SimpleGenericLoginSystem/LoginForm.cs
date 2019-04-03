@@ -23,7 +23,9 @@ namespace SimpleGenericLoginSystem
 
         private string userID;
         private string userPassword;
-
+        /// <summary>
+        /// Initialize component
+        /// </summary>
         public LoginForm()
         {
             InitializeComponent();
@@ -118,11 +120,25 @@ namespace SimpleGenericLoginSystem
                 }
             }
         }
-
+        /// <summary>
+        /// Reseting the text fields.
+        /// </summary>
         public void resetInputFields()
         {
             textBoxUserID.Text = "";
             textBoxUserPassword.Text = "";
+        }
+
+        private void textBoxUserID_TextChanged(object sender, EventArgs e)
+        {
+            if (textBoxUserID.Text.Length > 0 && textBoxUserPassword.Text.Length > 0)
+            {
+                buttonUserLogin.Enabled = true;
+            }
+            else
+            {
+                buttonUserLogin.Enabled = false;
+            }
         }
     }
 }

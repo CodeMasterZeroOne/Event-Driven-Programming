@@ -10,9 +10,13 @@ using System.Windows.Forms;
 
 namespace SimpleGenericLoginSystem
 {
+    /// <summary>
+    /// Class ForgotPasswordForm inherits from Form
+    /// </summary>
     public partial class ForgotPasswordForm : Form
     {
         private Form callingForm;
+        private HelpForm helpForm;
         /// <summary>
         /// Public method 
         /// </summary>
@@ -26,6 +30,16 @@ namespace SimpleGenericLoginSystem
         private void ForgotPasswordForm_Load(object sender, EventArgs e)
         {
             
+        }
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            helpForm = new HelpForm();
+            helpForm.Show();
         }
         /// <summary>
         /// Event handler for Cancel registration button clicked

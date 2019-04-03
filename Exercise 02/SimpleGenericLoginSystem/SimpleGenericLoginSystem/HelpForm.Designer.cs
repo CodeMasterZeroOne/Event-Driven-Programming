@@ -37,7 +37,7 @@
             // labelHelp
             // 
             this.labelHelp.AutoSize = true;
-            this.labelHelp.Location = new System.Drawing.Point(156, 31);
+            this.labelHelp.Location = new System.Drawing.Point(173, 28);
             this.labelHelp.Name = "labelHelp";
             this.labelHelp.Size = new System.Drawing.Size(29, 13);
             this.labelHelp.TabIndex = 0;
@@ -46,12 +46,12 @@
             // textBoxHelp
             // 
             this.textBoxHelp.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBoxHelp.Location = new System.Drawing.Point(12, 52);
+            this.textBoxHelp.Location = new System.Drawing.Point(47, 59);
             this.textBoxHelp.Multiline = true;
             this.textBoxHelp.Name = "textBoxHelp";
             this.textBoxHelp.ReadOnly = true;
             this.textBoxHelp.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxHelp.Size = new System.Drawing.Size(360, 268);
+            this.textBoxHelp.Size = new System.Drawing.Size(300, 240);
             this.textBoxHelp.TabIndex = 11;
             this.textBoxHelp.TabStop = false;
             this.textBoxHelp.Text = resources.GetString("textBoxHelp.Text");

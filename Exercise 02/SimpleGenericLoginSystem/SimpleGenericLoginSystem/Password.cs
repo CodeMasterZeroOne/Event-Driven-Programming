@@ -17,7 +17,9 @@
 
 namespace PasswordValidator
 {
-
+    /// <summary>
+    /// Public Password class
+    /// </summary>
     public class Password
     {
         private Password() { }
@@ -34,7 +36,11 @@ namespace PasswordValidator
         private const int REPEAT_SEQUENCE_COUNT = 6;
 
         private static String errorMessages = "";
-
+        /// <summary>
+        /// Public class to validate the password.
+        /// </summary>
+        /// <param name="pw"></param>
+        /// <returns>bool valid</returns>
         public static bool isPassword(String pw)
         {
             int[] counts = getCharacterCounts(pw);
@@ -87,7 +93,10 @@ namespace PasswordValidator
             }
             return valid;
         }
-
+        /// <summary>
+        /// Public method getLastErrorMessage
+        /// </summary>
+        /// <returns>string errorMessages</returns>
         public static String getLastErrorMessage()
         {
             return errorMessages;
