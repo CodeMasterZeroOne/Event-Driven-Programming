@@ -1,0 +1,361 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SimpleGenericLoginSystem</name>
+    </assembly>
+    <members>
+        <member name="T:SimpleGenericLoginSystem.DataManager">
+            <summary>
+            Sealed class DataManager
+            </summary>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.DataManager.getDataManager">
+            <summary>
+            Gets data manager and if it does not exists it will make one.
+            </summary>
+            <returns>DataManager</returns>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.DataManager.doesUserExist(System.String)">
+            <summary>
+            Private method to check if user exists.
+            </summary>
+            <param name="userID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.DataManager.doesPasswordMatch(System.String,System.String)">
+            <summary>
+            Public method for checking the password
+            </summary>
+            <param name="userID"></param>
+            <param name="password"></param>
+            <returns>Tuple</returns>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.DataManager.rowToUser(System.Data.DataRow)">
+            <summary>
+            Public method that creates the user object from data row
+            </summary>
+            <param name="row"></param>
+            <returns>User</returns>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.DataManager.doesUserIdMatch(System.String)">
+            <summary>
+            Public method responsible for checking if user ID is in our records
+            </summary>
+            <param name="userID"></param>
+            <returns>Tuple</returns>
+        </member>
+        <member name="T:SimpleGenericLoginSystem.FileManager">
+            <summary>
+            File mamnager sealed singleton class used to read from csv file
+            </summary>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.FileManager.getFileManager">
+            <summary>
+            Public method to get access to file manager
+            </summary>
+            <returns>FileManager</returns>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.FileManager.LoadData">
+            <summary>
+            Public method for loading data table
+            </summary>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.FileManager.SaveData(System.Data.DataTable)">
+            <summary>
+            Public method for saving data
+            </summary>
+            <param name="dataTable"></param>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.ChangePasswordForm.#ctor(System.Windows.Forms.Form)">
+            <summary>
+            Public method that initializes all the values
+            </summary>
+            <param name="callingForm"></param>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.ChangePasswordForm.buttonCancelPassword_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for Cancel button clicked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.ChangePasswordForm.buttonChangePassword_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for Change password button clicked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:SimpleGenericLoginSystem.ChangePasswordForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.ChangePasswordForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.ChangePasswordForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:SimpleGenericLoginSystem.ForgotPasswordForm">
+            <summary>
+            Class ForgotPasswordForm inherits from Form
+            </summary>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.ForgotPasswordForm.#ctor(System.Windows.Forms.Form)">
+            <summary>
+            Public method 
+            </summary>
+            <param name="callingForm"></param>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.ForgotPasswordForm.buttonCancelRegistration_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for Cancel registration button clicked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.ForgotPasswordForm.buttonRecoverPassword_Click(System.Object,System.EventArgs)">
+            <summary>
+            Validate user ID and if it exist
+            display user email and password associated with this email
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:SimpleGenericLoginSystem.ForgotPasswordForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.ForgotPasswordForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.ForgotPasswordForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.HelpForm.#ctor">
+            <summary>
+            Initializing component
+            </summary>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.HelpForm.buttonOk_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for ok button clicked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:SimpleGenericLoginSystem.HelpForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.HelpForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.HelpForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.LoginForm.#ctor">
+            <summary>
+            Initialize component
+            </summary>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.LoginForm.buttonUserRegister_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for register user button clicked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.LoginForm.exitToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for ToolStrip menu item help clicked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.LoginForm.exitToolStripMenuItem1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for ToolStrip menu item File/Exit clicked
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.LoginForm.linkLabelForgotPassword_LinkClicked(System.Object,System.Windows.Forms.LinkLabelLinkClickedEventArgs)">
+            <summary>
+            Event handler for forgot password linklabel clicked.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.LoginForm.buttonUserLogin_Click(System.Object,System.EventArgs)">
+            <summary>
+            Validate the user and if validated show successful login window if
+            not show error message incorect password or user Id
+            If userID and password == "fred" 
+            then user is super user with all the privileges
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.LoginForm.resetInputFields">
+            <summary>
+            Reseting the text fields.
+            </summary>
+        </member>
+        <member name="F:SimpleGenericLoginSystem.LoginForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.LoginForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.LoginForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:SimpleGenericLoginSystem.Password">
+            <summary>
+            Public Password class
+            </summary>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.Password.isPassword(System.String)">
+            <summary>
+            Public class to validate the password.
+            </summary>
+            <param name="pw"></param>
+            <returns>bool valid</returns>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.Password.getLastErrorMessage">
+            <summary>
+            Public method getLastErrorMessage
+            </summary>
+            <returns>string errorMessages</returns>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.Password.getCharacterCounts(System.String)">
+            <summary>
+            Private method for counting characters.
+            </summary>
+            <param name="pw"></param>
+            <returns>int[] counts</returns>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.RegisterForm.#ctor(System.Windows.Forms.Form)">
+            <summary>
+            Public method for initialization of the values.
+            </summary>
+            <param name="callingForm"></param>
+        </member>
+        <member name="F:SimpleGenericLoginSystem.RegisterForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.RegisterForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.RegisterForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:SimpleGenericLoginSystem.User">
+            <summary>
+            Public User class with all the fields, getters and setters.
+            </summary>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.User.setUsersRole(System.Int32)">
+            <summary>
+            Public method that sets up user privilages based on the Role choosen 
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="T:SimpleGenericLoginSystem.UserLoggedInForm">
+            <summary>
+            Class UserLoggedInForm inherits from Form
+            </summary>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.UserLoggedInForm.#ctor(System.Windows.Forms.Form,SimpleGenericLoginSystem.User)">
+            <summary>
+            Initialize component
+            </summary>
+            <param name="callingForm"></param>
+            <param name="user"></param>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.UserLoggedInForm.UserLoggedInForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            Private method to initialize the values.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:SimpleGenericLoginSystem.UserLoggedInForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.UserLoggedInForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SimpleGenericLoginSystem.UserLoggedInForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:SimpleGenericLoginSystem.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:SimpleGenericLoginSystem.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:SimpleGenericLoginSystem.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

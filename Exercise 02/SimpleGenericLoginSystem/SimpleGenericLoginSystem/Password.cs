@@ -15,7 +15,7 @@
  * Any password entered by the user must conform to the requirements above.
  */
 
-namespace PasswordValidator
+namespace SimpleGenericLoginSystem
 {
     /// <summary>
     /// Public Password class
@@ -36,12 +36,36 @@ namespace PasswordValidator
         private const int REPEAT_SEQUENCE_COUNT = 6;
 
         private static String errorMessages = "";
-        /// <summary>
-        /// Public class to validate the password.
-        /// </summary>
-        /// <param name="pw"></param>
-        /// <returns>bool valid</returns>
-        public static bool isPassword(String pw)
+
+
+        private string firstName;
+        private string lastName;
+        private string userID;
+        private string userPassword;
+        private string userRole;
+        private string accountNumber;
+        private string email;
+        private bool administrationFullAccess;
+        private bool administrationReportPrivileges;
+        private bool generateAuditRecords;
+        private bool viewAuditRecords;
+        private bool inputAccountPayments;
+        private bool authoriseAccountPayments;
+        private bool manageAccount;
+        private bool viewAccountInformation;
+        private bool viewAccountBalances;
+
+       
+
+
+
+
+    /// <summary>
+    /// Public class to validate the password.
+    /// </summary>
+    /// <param name="pw"></param>
+    /// <returns>bool valid</returns>
+    public static bool isPassword(String pw)
         {
             int[] counts = getCharacterCounts(pw);
             bool valid = true;

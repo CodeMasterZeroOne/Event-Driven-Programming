@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="AccountNumber property" Url="html/990d2bc3-3eaa-6d87-b4b5-1bee60a5b323.htm" />
+  <HelpKINode Title="AdministrationFullAccess property" Url="html/c0e1537c-699c-e702-c1fb-c307536338eb.htm" />
+  <HelpKINode Title="AdministrationReportPrivileges property" Url="html/eb040009-4702-50e2-84e3-5b1302c69938.htm" />
+  <HelpKINode Title="AuthoriseAccountPayments property" Url="html/f365a59d-6248-6583-132d-ad2a5ab80bf7.htm" />
+  <HelpKINode Title="ChangePasswordForm class">
+    <HelpKINode Title="ChangePasswordForm Class" Url="html/2edd8c3a-09e8-d987-652c-c4dfcbb83e5e.htm" />
+    <HelpKINode Title="constructor" Url="html/f81492b6-d52f-5db8-9a9b-d457b2ca2326.htm" />
+    <HelpKINode Title="events" Url="html/dcb46168-fa0f-399b-e8c8-178cc70a7dbf.htm" />
+    <HelpKINode Title="methods" Url="html/7eded50e-8539-fa59-8ab0-f7974afe2f45.htm" />
+    <HelpKINode Title="properties" Url="html/44275d88-df0a-8feb-6b6d-0c5cc81cd20f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ChangePasswordForm.ChangePasswordForm constructor" Url="html/f81492b6-d52f-5db8-9a9b-d457b2ca2326.htm" />
+  <HelpKINode Title="ChangePasswordForm.Dispose method" Url="html/38686213-781d-9778-48d7-9e4a2ab18cc1.htm" />
+  <HelpKINode Title="Dispose method">
+    <HelpKINode Title="ChangePasswordForm.Dispose Method " Url="html/38686213-781d-9778-48d7-9e4a2ab18cc1.htm" />
+    <HelpKINode Title="ForgotPasswordForm.Dispose Method " Url="html/8242855a-9247-8044-e3fc-2ce75257b9fa.htm" />
+    <HelpKINode Title="HelpForm.Dispose Method " Url="html/80edd2b8-2c4b-9922-f26c-943e61e8647b.htm" />
+    <HelpKINode Title="LoginForm.Dispose Method " Url="html/946579cf-87e1-638b-9233-1f272abf80bf.htm" />
+    <HelpKINode Title="RegisterForm.Dispose Method " Url="html/915ef312-35fe-4bc0-701b-67c491783ec5.htm" />
+    <HelpKINode Title="UserLoggedInForm.Dispose Method " Url="html/1513a230-3828-9dd3-b229-b4919d58485f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Email property" Url="html/8b28e7f5-3929-ad84-f6f8-d06bcf0ab16e.htm" />
+  <HelpKINode Title="FirstName property" Url="html/2d08ebf8-7bd5-6d4f-0c3f-a5deb5541399.htm" />
+  <HelpKINode Title="ForgotPasswordForm class">
+    <HelpKINode Title="ForgotPasswordForm Class" Url="html/89968baa-3dfb-98a2-2c2b-8a7bd564f696.htm" />
+    <HelpKINode Title="constructor" Url="html/6f10de96-1df6-a3f4-1c99-e88ee0bf3d2b.htm" />
+    <HelpKINode Title="events" Url="html/374f9a3e-e7cc-164b-a5af-5217d7b5b283.htm" />
+    <HelpKINode Title="methods" Url="html/31d3ed0f-4a0e-63d0-4232-29aec9743e6f.htm" />
+    <HelpKINode Title="properties" Url="html/2929cab9-cd01-8c1f-c879-7fed7c0b0251.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ForgotPasswordForm.Dispose method" Url="html/8242855a-9247-8044-e3fc-2ce75257b9fa.htm" />
+  <HelpKINode Title="ForgotPasswordForm.ForgotPasswordForm constructor" Url="html/6f10de96-1df6-a3f4-1c99-e88ee0bf3d2b.htm" />
+  <HelpKINode Title="GenerateAuditRecords property" Url="html/c87eb8cb-064a-b02e-1f5a-66204cd4bde3.htm" />
+  <HelpKINode Title="getLastErrorMessage method" Url="html/c0144364-3346-5d5b-f456-73eff57ab9d7.htm" />
+  <HelpKINode Title="HelpForm class">
+    <HelpKINode Title="HelpForm Class" Url="html/153bd25b-1a7e-6da2-952a-5f0549a1d6bb.htm" />
+    <HelpKINode Title="constructor" Url="html/1e29b694-32b5-6824-340a-43f56aea3a43.htm" />
+    <HelpKINode Title="events" Url="html/782414a6-5d3f-108a-b3e4-a557e3e329fe.htm" />
+    <HelpKINode Title="methods" Url="html/5cc0dbb6-fd72-28de-1c30-fba98c4d8580.htm" />
+    <HelpKINode Title="properties" Url="html/72028589-8dbb-8c97-0a33-e29823636fa4.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HelpForm.Dispose method" Url="html/80edd2b8-2c4b-9922-f26c-943e61e8647b.htm" />
+  <HelpKINode Title="HelpForm.HelpForm constructor" Url="html/1e29b694-32b5-6824-340a-43f56aea3a43.htm" />
+  <HelpKINode Title="InputAccountPayments property" Url="html/6630d707-f2f8-e1ec-1867-2ebd1cc36b9f.htm" />
+  <HelpKINode Title="isPassword method" Url="html/daae0da8-33a6-8db4-8360-4b03f32c40ad.htm" />
+  <HelpKINode Title="LastName property" Url="html/932ae7ca-cd4c-9abd-d554-6a4cd1920f69.htm" />
+  <HelpKINode Title="LoginForm class">
+    <HelpKINode Title="LoginForm Class" Url="html/fdf54c8e-f0c0-3a1d-c454-90c5fc14000d.htm" />
+    <HelpKINode Title="constructor" Url="html/78942b35-9e02-7d3e-bbba-861ec14cc1cb.htm" />
+    <HelpKINode Title="events" Url="html/1142a0bf-cb63-e346-b3d9-810738a16074.htm" />
+    <HelpKINode Title="methods" Url="html/c5f9c3d8-9b6f-12c2-b2c3-65404e5ad581.htm" />
+    <HelpKINode Title="properties" Url="html/d9ee92e9-7a69-aaf5-ef54-56aa30e92f91.htm" />
+  </HelpKINode>
+  <HelpKINode Title="LoginForm.Dispose method" Url="html/946579cf-87e1-638b-9233-1f272abf80bf.htm" />
+  <HelpKINode Title="LoginForm.LoginForm constructor" Url="html/78942b35-9e02-7d3e-bbba-861ec14cc1cb.htm" />
+  <HelpKINode Title="LoginForm.resetInputFields method" Url="html/3c34ab00-e840-68ce-0dc5-999cd2994317.htm" />
+  <HelpKINode Title="ManageAccount property" Url="html/451aee91-b0be-8aae-e8f2-e3a577a700b5.htm" />
+  <HelpKINode Title="Password class">
+    <HelpKINode Title="Password Class" Url="html/e595b633-5a88-dc18-d4e6-6e8b3a2c46fa.htm" />
+    <HelpKINode Title="methods" Url="html/c9920f18-1d88-1594-7194-d1e56cc658e6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Password.getLastErrorMessage method" Url="html/c0144364-3346-5d5b-f456-73eff57ab9d7.htm" />
+  <HelpKINode Title="Password.isPassword method" Url="html/daae0da8-33a6-8db4-8360-4b03f32c40ad.htm" />
+  <HelpKINode Title="RegisterForm class">
+    <HelpKINode Title="RegisterForm Class" Url="html/47343421-324f-7571-9a5a-7f16e4c739bd.htm" />
+    <HelpKINode Title="constructor" Url="html/53584212-d973-5d5a-897a-3343cc27431c.htm" />
+    <HelpKINode Title="events" Url="html/0956acc3-75ca-4940-4b91-6522236e0a10.htm" />
+    <HelpKINode Title="methods" Url="html/526997f9-179b-4f7f-4825-bbf65277257d.htm" />
+    <HelpKINode Title="properties" Url="html/44cdc1ee-c305-4b77-8848-40a08d7678be.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RegisterForm.Dispose method" Url="html/915ef312-35fe-4bc0-701b-67c491783ec5.htm" />
+  <HelpKINode Title="RegisterForm.RegisterForm constructor" Url="html/53584212-d973-5d5a-897a-3343cc27431c.htm" />
+  <HelpKINode Title="resetInputFields method" Url="html/3c34ab00-e840-68ce-0dc5-999cd2994317.htm" />
+  <HelpKINode Title="setUsersRole method" Url="html/ef3e7fab-0b78-0696-30a6-bba15fa59659.htm" />
+  <HelpKINode Title="SimpleGenericLoginSystem namespace" Url="html/68550e78-ed0c-9393-0e29-301e3c08ce32.htm" />
+  <HelpKINode Title="SimpleGenericLoginSystem.ChangePasswordForm class" Url="html/2edd8c3a-09e8-d987-652c-c4dfcbb83e5e.htm" />
+  <HelpKINode Title="SimpleGenericLoginSystem.ForgotPasswordForm class" Url="html/89968baa-3dfb-98a2-2c2b-8a7bd564f696.htm" />
+  <HelpKINode Title="SimpleGenericLoginSystem.HelpForm class" Url="html/153bd25b-1a7e-6da2-952a-5f0549a1d6bb.htm" />
+  <HelpKINode Title="SimpleGenericLoginSystem.LoginForm class" Url="html/fdf54c8e-f0c0-3a1d-c454-90c5fc14000d.htm" />
+  <HelpKINode Title="SimpleGenericLoginSystem.Password class" Url="html/e595b633-5a88-dc18-d4e6-6e8b3a2c46fa.htm" />
+  <HelpKINode Title="SimpleGenericLoginSystem.RegisterForm class" Url="html/47343421-324f-7571-9a5a-7f16e4c739bd.htm" />
+  <HelpKINode Title="SimpleGenericLoginSystem.User class" Url="html/401cad09-7845-8b19-a888-0cfeafaa3c6a.htm" />
+  <HelpKINode Title="SimpleGenericLoginSystem.UserLoggedInForm class" Url="html/53b51a2f-6f69-fee2-2d39-7594421d406b.htm" />
+  <HelpKINode Title="User class">
+    <HelpKINode Title="User Class" Url="html/401cad09-7845-8b19-a888-0cfeafaa3c6a.htm" />
+    <HelpKINode Title="constructor" Url="html/352172d4-518d-2aeb-8455-20d715e795d3.htm" />
+    <HelpKINode Title="methods" Url="html/4703f930-6e50-8c16-090a-0ee5f8c1ca3c.htm" />
+    <HelpKINode Title="properties" Url="html/27a4fc83-8901-c33d-f655-a3780050d6c1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="User.AccountNumber property" Url="html/990d2bc3-3eaa-6d87-b4b5-1bee60a5b323.htm" />
+  <HelpKINode Title="User.AdministrationFullAccess property" Url="html/c0e1537c-699c-e702-c1fb-c307536338eb.htm" />
+  <HelpKINode Title="User.AdministrationReportPrivileges property" Url="html/eb040009-4702-50e2-84e3-5b1302c69938.htm" />
+  <HelpKINode Title="User.AuthoriseAccountPayments property" Url="html/f365a59d-6248-6583-132d-ad2a5ab80bf7.htm" />
+  <HelpKINode Title="User.Email property" Url="html/8b28e7f5-3929-ad84-f6f8-d06bcf0ab16e.htm" />
+  <HelpKINode Title="User.FirstName property" Url="html/2d08ebf8-7bd5-6d4f-0c3f-a5deb5541399.htm" />
+  <HelpKINode Title="User.GenerateAuditRecords property" Url="html/c87eb8cb-064a-b02e-1f5a-66204cd4bde3.htm" />
+  <HelpKINode Title="User.InputAccountPayments property" Url="html/6630d707-f2f8-e1ec-1867-2ebd1cc36b9f.htm" />
+  <HelpKINode Title="User.LastName property" Url="html/932ae7ca-cd4c-9abd-d554-6a4cd1920f69.htm" />
+  <HelpKINode Title="User.ManageAccount property" Url="html/451aee91-b0be-8aae-e8f2-e3a577a700b5.htm" />
+  <HelpKINode Title="User.setUsersRole method" Url="html/ef3e7fab-0b78-0696-30a6-bba15fa59659.htm" />
+  <HelpKINode Title="User.User constructor" Url="html/352172d4-518d-2aeb-8455-20d715e795d3.htm" />
+  <HelpKINode Title="User.UserID property" Url="html/4e5e0fa6-60aa-11bd-5fc1-c56bd58783d8.htm" />
+  <HelpKINode Title="User.UserPassword property" Url="html/3e8a0f43-de8e-da92-840a-1b923893bffd.htm" />
+  <HelpKINode Title="User.UserRole property" Url="html/e48ba31a-b7d2-bef3-fc81-5ab70a92e504.htm" />
+  <HelpKINode Title="User.ViewAccountBalances property" Url="html/1500f934-8df1-6ccd-884b-d30830ca3938.htm" />
+  <HelpKINode Title="User.ViewAccountInformation property" Url="html/508922f8-edef-d9f2-ccfe-f593f67486d7.htm" />
+  <HelpKINode Title="User.ViewAuditRecords property" Url="html/dba05efd-82aa-e8fa-a54c-cf65def05ef7.htm" />
+  <HelpKINode Title="UserID property" Url="html/4e5e0fa6-60aa-11bd-5fc1-c56bd58783d8.htm" />
+  <HelpKINode Title="UserLoggedInForm class">
+    <HelpKINode Title="UserLoggedInForm Class" Url="html/53b51a2f-6f69-fee2-2d39-7594421d406b.htm" />
+    <HelpKINode Title="constructor" Url="html/b9180885-375f-42db-3ae0-4b10356eeb94.htm" />
+    <HelpKINode Title="events" Url="html/80a9f59f-4403-4f32-73d0-bbac0157a2ee.htm" />
+    <HelpKINode Title="methods" Url="html/4a54c96d-c2db-aa4b-d2bb-00011aa79aea.htm" />
+    <HelpKINode Title="properties" Url="html/06bdbc92-4d29-46fe-53c7-8ec4e60eb015.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UserLoggedInForm.Dispose method" Url="html/1513a230-3828-9dd3-b229-b4919d58485f.htm" />
+  <HelpKINode Title="UserLoggedInForm.UserLoggedInForm constructor" Url="html/b9180885-375f-42db-3ae0-4b10356eeb94.htm" />
+  <HelpKINode Title="UserPassword property" Url="html/3e8a0f43-de8e-da92-840a-1b923893bffd.htm" />
+  <HelpKINode Title="UserRole property" Url="html/e48ba31a-b7d2-bef3-fc81-5ab70a92e504.htm" />
+  <HelpKINode Title="ViewAccountBalances property" Url="html/1500f934-8df1-6ccd-884b-d30830ca3938.htm" />
+  <HelpKINode Title="ViewAccountInformation property" Url="html/508922f8-edef-d9f2-ccfe-f593f67486d7.htm" />
+  <HelpKINode Title="ViewAuditRecords property" Url="html/dba05efd-82aa-e8fa-a54c-cf65def05ef7.htm" />
+</HelpKI>

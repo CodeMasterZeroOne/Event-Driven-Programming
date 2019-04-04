@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="dc60aec4-e849-46c9-af79-2aecaf502322" Title="SimpleGenericLoginSystem" Url="html/68550e78-ed0c-9393-0e29-301e3c08ce32.htm">
+    <HelpTOCNode Id="fee0654c-a759-4146-840b-d5a33a72a97d" Title="ChangePasswordForm Class" Url="html/2edd8c3a-09e8-d987-652c-c4dfcbb83e5e.htm">
+      <HelpTOCNode Title="ChangePasswordForm Constructor " Url="html/f81492b6-d52f-5db8-9a9b-d457b2ca2326.htm" />
+      <HelpTOCNode Title="ChangePasswordForm Properties" Url="html/44275d88-df0a-8feb-6b6d-0c5cc81cd20f.htm" />
+      <HelpTOCNode Id="39fafd79-5d70-40fe-8716-619805ae1ff0" Title="ChangePasswordForm Methods" Url="html/7eded50e-8539-fa59-8ab0-f7974afe2f45.htm">
+        <HelpTOCNode Id="06925039-f55d-473c-a226-1dfbedc4927e" Title="Dispose Method " Url="html/38686213-781d-9778-48d7-9e4a2ab18cc1.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/6bd72bbc-2c0c-e183-a256-3187d217d2ed.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="ChangePasswordForm Events" Url="html/dcb46168-fa0f-399b-e8c8-178cc70a7dbf.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="e8171a41-a8af-4766-b7b5-039577eecd37" Title="ForgotPasswordForm Class" Url="html/89968baa-3dfb-98a2-2c2b-8a7bd564f696.htm">
+      <HelpTOCNode Title="ForgotPasswordForm Constructor " Url="html/6f10de96-1df6-a3f4-1c99-e88ee0bf3d2b.htm" />
+      <HelpTOCNode Title="ForgotPasswordForm Properties" Url="html/2929cab9-cd01-8c1f-c879-7fed7c0b0251.htm" />
+      <HelpTOCNode Id="51817220-0fc5-441f-9e35-ede94db35784" Title="ForgotPasswordForm Methods" Url="html/31d3ed0f-4a0e-63d0-4232-29aec9743e6f.htm">
+        <HelpTOCNode Id="44be44c3-397b-423d-a1f8-2e16f619f7ce" Title="Dispose Method " Url="html/8242855a-9247-8044-e3fc-2ce75257b9fa.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/5c731796-15f8-11fa-a194-73392f797185.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="ForgotPasswordForm Events" Url="html/374f9a3e-e7cc-164b-a5af-5217d7b5b283.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="5aa56071-e926-46cc-a58e-b44607ac96e0" Title="HelpForm Class" Url="html/153bd25b-1a7e-6da2-952a-5f0549a1d6bb.htm">
+      <HelpTOCNode Title="HelpForm Constructor " Url="html/1e29b694-32b5-6824-340a-43f56aea3a43.htm" />
+      <HelpTOCNode Title="HelpForm Properties" Url="html/72028589-8dbb-8c97-0a33-e29823636fa4.htm" />
+      <HelpTOCNode Id="a6845bff-a135-46f9-9bb3-c6294cef9be5" Title="HelpForm Methods" Url="html/5cc0dbb6-fd72-28de-1c30-fba98c4d8580.htm">
+        <HelpTOCNode Id="ca08253a-2f71-4e25-8913-0b492f906fd9" Title="Dispose Method " Url="html/80edd2b8-2c4b-9922-f26c-943e61e8647b.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/d11f0106-798e-c6e1-92f1-db297ab2f595.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="HelpForm Events" Url="html/782414a6-5d3f-108a-b3e4-a557e3e329fe.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="70bdd208-340d-4a7b-810c-16c0f1e5099a" Title="LoginForm Class" Url="html/fdf54c8e-f0c0-3a1d-c454-90c5fc14000d.htm">
+      <HelpTOCNode Title="LoginForm Constructor " Url="html/78942b35-9e02-7d3e-bbba-861ec14cc1cb.htm" />
+      <HelpTOCNode Title="LoginForm Properties" Url="html/d9ee92e9-7a69-aaf5-ef54-56aa30e92f91.htm" />
+      <HelpTOCNode Id="c1cce335-a796-41f3-94e7-cf8f9519228f" Title="LoginForm Methods" Url="html/c5f9c3d8-9b6f-12c2-b2c3-65404e5ad581.htm">
+        <HelpTOCNode Id="8f933b3c-8f9a-4949-8cc9-7d11c94deed3" Title="Dispose Method " Url="html/946579cf-87e1-638b-9233-1f272abf80bf.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/1feb9588-cec3-2821-c24d-957b74caa24c.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="resetInputFields Method " Url="html/3c34ab00-e840-68ce-0dc5-999cd2994317.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="LoginForm Events" Url="html/1142a0bf-cb63-e346-b3d9-810738a16074.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="73d749d1-fbf8-49a7-b7bf-2fc738418250" Title="Password Class" Url="html/e595b633-5a88-dc18-d4e6-6e8b3a2c46fa.htm">
+      <HelpTOCNode Id="1af6d00e-ad75-46c7-b206-390d36617625" Title="Password Methods" Url="html/c9920f18-1d88-1594-7194-d1e56cc658e6.htm">
+        <HelpTOCNode Title="getLastErrorMessage Method " Url="html/c0144364-3346-5d5b-f456-73eff57ab9d7.htm" />
+        <HelpTOCNode Title="isPassword Method " Url="html/daae0da8-33a6-8db4-8360-4b03f32c40ad.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="3137872d-9e2d-4371-b310-8d6de078b9df" Title="RegisterForm Class" Url="html/47343421-324f-7571-9a5a-7f16e4c739bd.htm">
+      <HelpTOCNode Title="RegisterForm Constructor " Url="html/53584212-d973-5d5a-897a-3343cc27431c.htm" />
+      <HelpTOCNode Title="RegisterForm Properties" Url="html/44cdc1ee-c305-4b77-8848-40a08d7678be.htm" />
+      <HelpTOCNode Id="36dd9ff3-2dda-493d-9aa6-c60e3a42a148" Title="RegisterForm Methods" Url="html/526997f9-179b-4f7f-4825-bbf65277257d.htm">
+        <HelpTOCNode Id="78a19bbf-b62f-442c-96ef-7ed56beda399" Title="Dispose Method " Url="html/915ef312-35fe-4bc0-701b-67c491783ec5.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/b980fc10-97ff-d36f-8600-fe564442252c.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="RegisterForm Events" Url="html/0956acc3-75ca-4940-4b91-6522236e0a10.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="0f43bae2-fe43-4306-9361-83cb2c0c6612" Title="User Class" Url="html/401cad09-7845-8b19-a888-0cfeafaa3c6a.htm">
+      <HelpTOCNode Title="User Constructor " Url="html/352172d4-518d-2aeb-8455-20d715e795d3.htm" />
+      <HelpTOCNode Id="9087b555-3772-4e59-a9dd-d90b60961b29" Title="User Properties" Url="html/27a4fc83-8901-c33d-f655-a3780050d6c1.htm">
+        <HelpTOCNode Title="AccountNumber Property " Url="html/990d2bc3-3eaa-6d87-b4b5-1bee60a5b323.htm" />
+        <HelpTOCNode Title="AdministrationFullAccess Property " Url="html/c0e1537c-699c-e702-c1fb-c307536338eb.htm" />
+        <HelpTOCNode Title="AdministrationReportPrivileges Property " Url="html/eb040009-4702-50e2-84e3-5b1302c69938.htm" />
+        <HelpTOCNode Title="AuthoriseAccountPayments Property " Url="html/f365a59d-6248-6583-132d-ad2a5ab80bf7.htm" />
+        <HelpTOCNode Title="Email Property " Url="html/8b28e7f5-3929-ad84-f6f8-d06bcf0ab16e.htm" />
+        <HelpTOCNode Title="FirstName Property " Url="html/2d08ebf8-7bd5-6d4f-0c3f-a5deb5541399.htm" />
+        <HelpTOCNode Title="GenerateAuditRecords Property " Url="html/c87eb8cb-064a-b02e-1f5a-66204cd4bde3.htm" />
+        <HelpTOCNode Title="InputAccountPayments Property " Url="html/6630d707-f2f8-e1ec-1867-2ebd1cc36b9f.htm" />
+        <HelpTOCNode Title="LastName Property " Url="html/932ae7ca-cd4c-9abd-d554-6a4cd1920f69.htm" />
+        <HelpTOCNode Title="ManageAccount Property " Url="html/451aee91-b0be-8aae-e8f2-e3a577a700b5.htm" />
+        <HelpTOCNode Title="UserID Property " Url="html/4e5e0fa6-60aa-11bd-5fc1-c56bd58783d8.htm" />
+        <HelpTOCNode Title="UserPassword Property " Url="html/3e8a0f43-de8e-da92-840a-1b923893bffd.htm" />
+        <HelpTOCNode Title="UserRole Property " Url="html/e48ba31a-b7d2-bef3-fc81-5ab70a92e504.htm" />
+        <HelpTOCNode Title="ViewAccountBalances Property " Url="html/1500f934-8df1-6ccd-884b-d30830ca3938.htm" />
+        <HelpTOCNode Title="ViewAccountInformation Property " Url="html/508922f8-edef-d9f2-ccfe-f593f67486d7.htm" />
+        <HelpTOCNode Title="ViewAuditRecords Property " Url="html/dba05efd-82aa-e8fa-a54c-cf65def05ef7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="eb9ded27-901b-4c0c-a918-13e4e4bd58c2" Title="User Methods" Url="html/4703f930-6e50-8c16-090a-0ee5f8c1ca3c.htm">
+        <HelpTOCNode Id="5c45063c-b329-459b-9b69-c62f093fa7db" Title="setUsersRole Method " Url="html/ef3e7fab-0b78-0696-30a6-bba15fa59659.htm">
+          <HelpTOCNode Title="setUsersRole Method (Int32)" Url="html/a6797f1c-25d6-7a6c-a49a-aae7b3f8671f.htm" />
+          <HelpTOCNode Title="setUsersRole Method (String)" Url="html/61f755bc-4d54-54d6-c76e-545aa9f4a45e.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="1c8b8bde-f829-48f9-b016-dff30f2d0bf9" Title="UserLoggedInForm Class" Url="html/53b51a2f-6f69-fee2-2d39-7594421d406b.htm">
+      <HelpTOCNode Title="UserLoggedInForm Constructor " Url="html/b9180885-375f-42db-3ae0-4b10356eeb94.htm" />
+      <HelpTOCNode Title="UserLoggedInForm Properties" Url="html/06bdbc92-4d29-46fe-53c7-8ec4e60eb015.htm" />
+      <HelpTOCNode Id="a901d9d1-8e57-4903-a4c3-5aa4f6094e98" Title="UserLoggedInForm Methods" Url="html/4a54c96d-c2db-aa4b-d2bb-00011aa79aea.htm">
+        <HelpTOCNode Id="8dfe6705-5a5f-4b68-bffd-6b72d0639cab" Title="Dispose Method " Url="html/1513a230-3828-9dd3-b229-b4919d58485f.htm">
+          <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/591c7a83-e0a2-8ed5-1827-c4ec11a96d34.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="UserLoggedInForm Events" Url="html/80a9f59f-4403-4f32-73d0-bbac0157a2ee.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

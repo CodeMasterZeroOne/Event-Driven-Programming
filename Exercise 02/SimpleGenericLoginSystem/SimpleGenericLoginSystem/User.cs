@@ -44,6 +44,16 @@ namespace SimpleGenericLoginSystem
         public bool ManageAccount { get => manageAccount; set => manageAccount = value; }
         public bool ViewAccountInformation { get => viewAccountInformation; set => viewAccountInformation = value; }
         public bool ViewAccountBalances { get => viewAccountBalances; set => viewAccountBalances = value; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public User()
+        {
+            Char.ToLower('A');
+        }
+        
+        
         /// <summary>
         /// Public method that sets up user privilages based on the Role choosen 
         /// </summary>
